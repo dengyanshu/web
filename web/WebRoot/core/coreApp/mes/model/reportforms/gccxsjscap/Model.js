@@ -1,0 +1,13 @@
+Ext.define("core.mes.model.reportforms.gccxsjscap.Model",{
+	extend:'Ext.data.Model',
+	fields:[
+		{name:'工作中心'},  
+		{name:'工单'},
+		{name:'工单数量'},
+		{name:'产品描述'},
+		{name:'生产开始时间'},
+		{name:'生产结束时间'},
+		{name:'计划生产开始时间'},
+		{name:'计划生产结束时间'}
+	]
+});

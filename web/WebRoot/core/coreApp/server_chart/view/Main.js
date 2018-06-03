@@ -1,0 +1,9 @@
+Ext.define("core.server_chart.view.Main",{
+	extend:'Ext.Panel',
+	alias:'widget.server_chart_main',
+	layout:'border',
+	items:[
+		{xtype:'server_chart_listview'},
+		{xtype:'server_chart_search'}
+	]			
+});

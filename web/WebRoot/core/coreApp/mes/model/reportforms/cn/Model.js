@@ -1,0 +1,13 @@
+Ext.define("core.mes.model.reportforms.cn.Model",{
+	extend:'Ext.data.Model',
+	fields:[
+		{name:'MOName'},  
+		{name:'productname'},
+		{name:'ProductDescription'},
+		{name:'WorkcenterName'},
+		{name:'SpecificationName'},
+		{name:'总产量'},
+		{name:'开始事件'},
+		{name:'结束事件'}
+	]
+});

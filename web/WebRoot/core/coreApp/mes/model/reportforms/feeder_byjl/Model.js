@@ -1,0 +1,15 @@
+Ext.define("core.mes.model.reportforms.feeder_byjl.Model",{
+	extend:'Ext.data.Model',
+	fields:[
+		{name:'FeederName'},  
+		{name:'FeederDescription'},
+		{name:'Vendorname'},
+		{name:'Username'},
+		{name:'FDStatus'},
+		{name:'飞达保养日期'},
+		{name:'FeederType1'},
+		{name:'下一次月保养日期'},
+		{name:'下一次季度保养日期'},
+		{name:'下一次年保养日期'}
+	]
+});

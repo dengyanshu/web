@@ -1,0 +1,29 @@
+Ext.define("core.kanban_test.view.item.LedSc", {
+			extend : "Ext.grid.Panel",
+			alias : 'widget.tj_sc_led_kb',
+			loadMask : true, 
+			stripeRows : true,
+			store : 'core.kanban_test.store.led.Store',
+			columns : [
+					{header : '序号',dataIndex : 'RowNum',flex:0.5},
+					{header : '线别',dataIndex : 'WorkcenterName',flex:2},
+					{header : '工单',dataIndex : 'MOName',flex:1.3},
+					{header : 'MOId',dataIndex : 'MOId',hidden:true},
+					{header : '料号',dataIndex : 'ProductName',flex:1.3},
+					{header : '产品描述',dataIndex : 'ProductDescription',flex:1.3},
+					{header : '工单数量',dataIndex : 'MOQtyRequired',flex:1.2},
+					{header : '标准工时',dataIndex : 'StandardLaborTime',hidden:true},
+					{header : '标准人力',dataIndex : 'StandardHuman',hidden:true},
+					{header : '达成率',dataIndex : 'AchievingRate',flex:1.2},
+					{header : '标准产能(即目标)',dataIndex : 'StandardCapacity',flex:1.2},
+					{header : '班别',dataIndex : 'ShiftName',hidden:true}
+			],
+			dockedItems:[{
+				xtype:'pagingtoolbar',
+				store : 'core.kanban_test.store.led.Store',
+				dock:'bottom',
+				displayInfo:true,
+				displayMsg:'第{0} 到 {1} 条数据 共{2}条',
+				emptyMsg:'没有数据'
+			}]
+		});

@@ -1,0 +1,13 @@
+Ext.define("core.mes.store.reportforms.smt_sbbyjl.Store",{
+	extend:'Ext.data.Store',
+	remoteSort:true,
+   	model:'core.mes.model.reportforms.smt_sbbyjl.Model',
+    pageSize:30,
+    proxy:{
+    	type:'pagingmemory',
+    	reader:{
+    		type:'json',
+    		root:'data'
+    	}
+    }
+});

@@ -1,0 +1,9 @@
+Ext.define("core.smt_jitchaoling.view.Main",{
+	extend:'Ext.Panel',
+	alias:'widget.smt_jitchaoling_main',
+	layout:'border',
+	items:[
+		{xtype:'smt_jitchaoling_listview'},
+		{xtype:'smt_jitchaoling_search'}
+	]			
+});

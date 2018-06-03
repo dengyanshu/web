@@ -1,0 +1,9 @@
+Ext.define("core.ff_chejian.view.Main",{
+	extend:'Ext.Panel',
+	alias:'widget.ff_chejian_main',
+	layout:'border',
+	items:[
+		{xtype:'ff_chejian_listview'},
+		{xtype:'ff_chejian_search'}
+	]			
+});

@@ -1,0 +1,27 @@
+   Ext.define("core.smt_line_scan_interval_time.view.Result",{
+   	extend:"Ext.grid.GridPanel",
+   	alias:'widget.smt_line_scan.interval_time.result',
+	frame:true,			
+	loadMask : true,	 
+	stripeRows : true,
+	title:'资源列表',
+	store:'core.smt_line_scan_interval_time.store.Store',
+	columns : [
+	   	{text:'序号',dataIndex:'RowNum',flex:0.5},
+		{text: '资源',dataIndex:'Resource',flex:1.5},
+		{text:"扫描条码",dataIndex:'ScanBarcode',flex:1.5},
+		{text:"扫描时间",dataIndex:'ScanTime',flex:1.5},
+		{text:"上次扫描条码",dataIndex:'LastTimeScanBarcode',flex:1.5},
+		{text:"上次扫描时间",dataIndex:'LastTimeScanTime',flex:1.5},
+		{text:"[间隔时间(秒)]",dataIndex:'IntervalTime',flex:1}
+	],
+	dockedItems:[{
+		xtype:'pagingtoolbar',
+		store : 'core.smt_line_scan_interval_time.store.Store',
+		dock:'bottom',
+		displayInfo:true,
+		displayMsg:'第{0} 到 {1} 条数据 共{2}条',
+		emptyMsg:'没有数据'
+	}]
+});
+ 

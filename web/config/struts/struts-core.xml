@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+	"http://struts.apache.org/dtds/struts-2.1.dtd">
+
+<struts>
+	 <package name="core" namespace="/core" extends="pc-default">
+	 	<action name="iconAction" class="iconAction">
+			<result type="plainText" /> 
+		</action>	 	
+	 	<action name="ddAction" class="ddAction">
+			<result type="plainText" /> 
+		</action>	 	
+	 	<action name="ddItemAction" class="ddItemAction">
+			<result type="plainText" /> 
+		</action>	 	
+    </package>
+</struts>
+	

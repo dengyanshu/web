@@ -1,0 +1,9 @@
+Ext.define("core.ff_moname.view.Main",{
+	extend:'Ext.Panel',
+	alias:'widget.ff_moname_main',
+	layout:'border',
+	items:[
+		{xtype:'ff_moname_listview'},
+		{xtype:'ff_moname_search'}
+	]			
+});

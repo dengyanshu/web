@@ -1,0 +1,8 @@
+{
+	sop:[	
+			{id:'sop-01-01',text:'查看SOP',name:'search_sop',leaf:true},
+			{id:'sop-01-02',text:'添加SOP',name:'add_sop',leaf:true},
+			{id:'sop-01-03',text:'删除SOP',name:'delete_sop',leaf:true}
+	]
+
+}

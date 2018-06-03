@@ -1,0 +1,10 @@
+Ext.define("core.sop.model.search.Model",{
+	extend:'Ext.data.Model',
+	fields:[
+		{name:'id'},  
+		{name:'processing'},
+		{name:'name'},
+		{name:'date'},
+		{name:'type'}
+	]
+});

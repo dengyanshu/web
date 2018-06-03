@@ -1,0 +1,9 @@
+Ext.define("core.sb_dept.view.Main",{
+	extend:'Ext.Panel',
+	alias:'widget.sb_dept_main',
+	layout:'border',
+	items:[
+	    {xtype:'sb_dept_search'},
+		{xtype:'sb_dept_listview'}
+	]			
+});

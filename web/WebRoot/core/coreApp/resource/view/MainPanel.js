@@ -1,0 +1,9 @@
+Ext.define("core.resource.view.MainPanel",{
+	extend:'Ext.panel.Panel',
+	alias:'widget.resource_mainpanel',
+	layout:'border',
+	items:[
+	       {xtype:'resource-northpanel'},
+	   {xtype:'resource-centerpanel'}
+	]
+});

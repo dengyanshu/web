@@ -1,0 +1,21 @@
+Ext.define("core.mes.model.reportforms.iqc.Model",{
+	extend:'Ext.data.Model',
+	fields:[
+		{name:'物料编码'},  
+		{name:'供应商'},
+		{name:'料号'},
+		{name:'ROHS送检时间'},
+		{name:'ROHS送检人'},
+		{name:'ROHS检验'},
+		{name:'包材耐破送检时间'},
+		{name:'包材送检人'},
+		{name:'包材检验人'},
+		{name:'物料规则送检时间'},
+		{name:'物料规则送检人'},
+		{name:'物料规则检验人'},
+		{name:'物料规则检验结果'},
+		{name:'ROHS检验报告单'},
+		{name:'包材耐破检验报告单'},
+		{name:'物料规则检验报告单'}		
+	]
+});		

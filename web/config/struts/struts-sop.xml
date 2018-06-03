@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+	"http://struts.apache.org/dtds/struts-2.1.dtd">
+
+<struts>
+	 <package name="sop" namespace="/sop" extends="json-default">
+	 	<action name="add" class="com.data.sop.AddSop">
+			<result type="json" /> 		
+		</action>
+		<action name="del" class="com.data.sop.DelSop">
+			<result type="json" /> 
+		</action>
+		<action name="search" class="com.data.sop.SearchSop">
+			<result type="json" /> 
+		</action>	
+		<action name="update" class="com.data.sop.UpdateSop">
+			<result type="json" /> 
+		</action> 	
+		<action name="open_sop" class="com.data.sop.OpenSop">
+			<result type="json" /> 
+		</action> 	
+		<action name="del_temp_sop" class="com.data.sop.Del_Temp_Sop">
+			<result type="json" /> 
+		</action> 		
+    </package>
+</struts>
+	

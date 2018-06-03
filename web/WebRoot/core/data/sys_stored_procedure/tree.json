@@ -1,0 +1,281 @@
+{
+	text : 'root',
+	name : 'ROOT',
+	expanded : true,
+	children : [{
+				id : 'sys-stored-procedure-01-01',
+				text : '仓库看板',
+				name : '仓库看板',
+				children : [{
+							text : "今日DIP备料",
+							name : 'AbsoluteCompleteRate_todayDIP',
+							children : [{
+										text : "项目清单",
+										name : 'rubs_rubs',
+										leaf : true
+									},]
+						}, {
+							text : "今日SMT备料",
+							name : 'AbsoluteCompleteRate_todaySMT',
+							children : [{
+										text : "项目清单",
+										name : 'rubs_rubs',
+										leaf : true
+									},]
+						}, {
+							text : "明日DIP备料",
+							name : 'AbsoluteCompleteRate_plandDIP',
+							children : [{
+										text : "项目清单",
+										name : 'rubs_rubs',
+										leaf : true
+									},]
+						}, {
+							text : "明日SMT备料",
+							name : 'AbsoluteCompleteRate_planSMT',
+							children : [{
+										text : "项目清单",
+										name : 'rubs_rubs',
+										leaf : true
+									},]
+						}, {
+							text : "SMT领料",
+							name : 'WB_TradMaterial',
+							children : [{
+										text : "项目清单",
+										name : 'WB_TradMaterial_Item',
+										leaf : true
+									},]
+						}]
+			}, {
+				id : 'sys-stored-procedure-01-02',
+				text : 'DIP看板',
+				name : 'DIP看板',
+				children : [{
+							text : "DIP制成",
+							name : 'MainBoard_DIP',
+							children : [{
+										text : "项目清单",
+										name : 'saround_campin_bap',
+										leaf : true
+									},]
+						}, {
+							text : "DIP上料明细",
+							name : 'MainBoard_LotOnDIP',
+							children : [{
+										text : "项目清单",
+										name : 'Txn_DipLoadPartLookPanel',
+										leaf : true
+									},]
+						}, {
+							text : "组测包产能查询",
+							name : 'NewZcb_Dip_time',
+							children : [{
+										text : "项目清单",
+										name : 'NewZcb_Dip_detail',
+										leaf : true
+									},]
+						}, {
+							text : "产能工b时报表",
+							name : 'workcenter_productnum',
+							leaf : true
+						}, {
+							text : "超领料报表",
+							name : 'Txn_SMTMaterPickingReportDoMethod',
+							leaf : true
+						},{
+							text : "余料仓看板",
+							name : 'PlusQtyOfXStore_ForWeb',
+							leaf : true
+						}, {
+							text : "规程看板",
+							name : '',
+							children : [{
+										text : "项目清单",
+										name : 'Specification_Dip_detail',
+										leaf : true
+									},]
+						}, {
+							text : "考勤人力",
+							name : 'DiffHR_SG_PMCDoMethod',
+							leaf : true
+						}]
+			}, {
+				id : 'sys-stored-procedure-01-03',
+				text : 'SMT看板',
+				name : 'SMT看板',
+				children : [{
+					text : "线体物料看板",
+					name : 'line',
+					children : [{
+								text : "SMT线别",
+								name : 'SmtWorkCenterAndWorkingMOYield',
+								children : [{
+											text : "线体物料看板",
+											name : 'MainBoard_SMT_WorkcenterToDay',
+											children : [{
+														text : "项目清单",
+														name : 'smt_board_new',
+														leaf : true
+													},]
+										},]
+							},]
+				}, {
+					text : "整体物料看板",
+					name : 'all',
+					children : [{
+								text : "SMT上料",
+								name : 'MainBoard_SMT',
+								children : [{
+											text : "项目清单",
+											name : 'smt_board_new',
+											leaf : true
+										},]
+							}, {
+								text : "SMT产能",
+								name : 'smt_production_information',
+								children : [{
+											text : "项目清单",
+											name : 'smt_productive_zh',
+											leaf : true
+										},]
+							}, {
+								text : "SMT产出",
+								name : 'SmtWorkCenterYield',
+								children : [{
+											text : "项目清单",
+											name : 'smt_productive_zh_workcenter',
+											leaf : true
+										},]
+							}]
+				},{
+					text : "线边仓看板",
+					name : 'xbc',
+					children : [{
+								text : "线边仓线别",
+								name : 'Productivity_SMT_Report',
+								children : [{
+											text : "线体物料看板",
+											name : 'MainBoard_SMT_WorkcenterToDay',
+											children : [{
+														text : "项目清单",
+														name : 'Report_SMT_LineStore',
+														leaf : true
+													},]
+										},]
+							},]
+				}]
+			}, {
+				id : 'sys-stored-procedure-01-04',
+				text : '天津生产看板',
+				name : '天津生产看板',
+				children : [{
+							text : "紫米生产看板",
+							name : 'NewZmSc_time',
+							children : [{
+										text : "项目清单",
+										name : 'NewZmSc_detail',
+										leaf : true
+									},]
+						}, {
+							text : "LED生产看板",
+							name : 'NewLedSc_time',
+							children : [{
+										text : "项目清单",
+										name : 'NewLedSc_detail',
+										leaf : true
+									},]
+						}, {
+							text : "SMT生产看板",
+							name : 'NewSmtSc_time',
+							children : [{
+										text : "项目清单",
+										name : 'NewSmtSc_detail',
+										leaf : true
+									},]
+						}]
+			}, {
+				id : 'sys-stored-procedure-01-05',
+				text : '天津SMT看板',
+				name : '天津SMT看板',
+				children : [{
+							text : "SMT上料",
+							name : 'TJ_SMT_Mnitor',
+							children : [{
+										text : "项目清单",
+										name : 'smt_board_new',
+										leaf : true
+									},]
+						}, {
+							text : "SMT产能",
+							name : 'smt_production_information',
+							children : [{
+										text : "项目清单",
+										name : 'smt_productive_zh',
+										leaf : true
+									},]
+						}]
+			}, {
+				id : 'sys-stored-procedure-01-06',
+				text : '天津LED看板',
+				name : '天津LED看板',
+				children : [{
+							text : "LED明细",
+							name : 'MainBoard_DIP',
+							children : [{
+										text : "项目清单",
+										name : 'smt_resume',
+										leaf : true
+									},]
+						}, {
+							text : "LED制程",
+							name : 'Txn_StatisticsLED',
+							children : [{
+										text : "项目清单",
+										name : 'Txn_StatisticsLED',
+										leaf : true
+									},]
+						}]
+			}, 
+
+			{
+				id : 'sys-stored-procedure-01-07',
+				text : '天津仓库看板',
+				name : '天津仓库看板',
+				children : [{
+							text : "天津今日DIP备料",
+							name : 'AbsoluteCompleteRate_todayDIP',
+							children : [{
+										text : "项目清单",
+										name : 'rubs_rubs',
+										leaf : true
+									},]
+						}, {
+							text : "天津今日SMT备料",
+							name : 'AbsoluteCompleteRate_todaySMT',
+							children : [{
+										text : "项目清单",
+										name : 'rubs_rubs',
+										leaf : true
+									},]
+						}, {
+							text : "天津明日DIP备料",
+							name : 'AbsoluteCompleteRate_plandDIP',
+							children : [{
+										text : "项目清单",
+										name : 'rubs_rubs',
+										leaf : true
+									},]
+						}, {
+							text : "天津明日SMT备料",
+							name : 'AbsoluteCompleteRate_planSMT',
+							children : [{
+										text : "项目清单",
+										name : 'rubs_rubs',
+										leaf : true
+									},]
+						}]
+						
+			}]
+
+}

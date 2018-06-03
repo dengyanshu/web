@@ -1,0 +1,36 @@
+body {
+	
+	background-color: #FFF;
+	overflow: hidden;
+}
+
+
+.titletd td {
+	background-color: #EFEFEF;
+	padding: 2px;
+	text-align: center;
+	eight:24px;
+	line-height:24px;
+}
+
+tbody.datatd tr td{word-break:break-all; height:24px; line-height:24px; text-align:center;background:#FFF;vertical-align:middle;}/* 默认背景被白色 */
+tbody.datatd tr.alt td { background:#F0F0F0;}							/* 默认隔行背景颜色 */
+tbody.datatd tr.over td {background:#ADD8E6;}
+tbody.datatd tr.warn td {background:#fd2c2c;}
+
+.td1 {
+	text-align:center;
+	font-size: 13px;
+	style="font-family:verdana;
+	color:#585858;
+	font-weight : bold;
+}
+.td2 {
+	text-align:center;
+	font-size: 13px;
+	style="font-family:verdana;
+}
+
+
+
+

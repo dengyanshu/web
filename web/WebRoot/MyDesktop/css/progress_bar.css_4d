@@ -1,0 +1,415 @@
+/* 锟斤拷源锟斤拷锟脚斤拷锟斤拷锟�/
+.plan-progress {
+  width: 100%;
+  height:56px;
+  overflow: hidden; 
+  padding: 0 10px; 
+  background: #d3d5d9;
+  border-radius: 2px;
+  background-image: -webkit-linear-gradient(top, #ebecef, #bfc3c7);
+  background-image: -moz-linear-gradient(top, #ebecef, #bfc3c7);
+  background-image: -o-linear-gradient(top, #ebecef, #bfc3c7);
+  background-image: linear-gradient(to bottom, #ebecef, #bfc3c7);
+  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.8), 0 2px 4px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(0, 0, 0, 0.1), 0 0 0 6px #b6babe, 0 7px rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.8), 0 2px 4px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(0, 0, 0, 0.1), 0 0 0 1.5px #b6babe, 0 7px rgba(255, 255, 255, 0.1);
+}
+
+.plan-progress-val0{
+  float: left;								/** 锟揭边革拷锟斤拷*/
+  margin-left:4px;						/** 锟揭边憋拷缘锟斤拷锟斤拷*/
+  margin-top:-4px;							/** 锟斤拷锟斤拷锟斤拷缘锟斤拷锟斤拷*/
+  font: bold 14px/34px Helvetica, Arial, sans-serif;
+  color: #fff;
+}
+
+.plan-progress-val00{
+  float: left;								/** 锟揭边革拷锟斤拷*/
+  margin-left:-106px;						/** 锟揭边憋拷缘锟斤拷锟斤拷*/
+  margin-top:17px;							/** 锟斤拷锟斤拷锟斤拷缘锟斤拷锟斤拷*/
+  font: bold 14px/34px Helvetica, Arial, sans-serif;
+  color: #fff;
+}
+
+.plan-progress-val1{
+  float: left;								/** 锟揭边革拷锟斤拷*/
+  margin-left:3px;						/** 锟揭边憋拷缘锟斤拷锟斤拷*/
+  margin-top:-4px;							/** 锟斤拷锟斤拷锟斤拷缘锟斤拷锟斤拷*/
+  font: bold 14px/34px Helvetica, Arial, sans-serif;
+  color: #133;
+  /** text-shadow: 0 1px rgba(255, 255, 255, 0.6);  锟斤拷锟斤拷锟斤拷影*/
+}
+
+.plan-progress-val11{
+  float: left;								/** 锟揭边革拷锟斤拷*/
+  margin-left:-106px;						/** 锟揭边憋拷缘锟斤拷锟斤拷*/
+  margin-top:17px;							/** 锟斤拷锟斤拷锟斤拷缘锟斤拷锟斤拷*/
+  font: bold 14px/34px Helvetica, Arial, sans-serif;
+  color: #133;
+}
+
+.plan-progress-bar {  
+  margin-top:3px;  				 /** 锟诫顶锟斤拷木锟斤拷锟�*/
+  /**  margin-left:0px;			 锟斤拷锟斤拷叩木锟斤拷锟�*/
+   /** position: relative;			 锟斤拷锟轿伙拷锟�*/
+  height: 50px;					 /** 锟斤拷却锟竭讹拷 */
+  float:left;
+  border-radius: 0px;
+  -webkit-transition: 0.4s linear;
+  -moz-transition: 0.4s linear;
+  -o-transition: 0.4s linear;
+  transition: 0.4s linear;
+  -webkit-transition-property: width, background-color;
+  -moz-transition-property: width, background-color;
+  -o-transition-property: width, background-color;
+  transition-property: width, background-color;
+  -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+}
+
+/* 锟斤拷源锟斤拷锟脚斤拷锟斤拷锟�/
+
+
+.container {
+  text-align: center;
+}
+
+.container .progress_1 {
+  width: 240px;
+}
+
+.container .progress {
+  width: 240px;
+}
+
+.progress-val_1 {
+  float: right;								/** 锟揭边革拷锟斤拷*/
+  margin-right:-55px;						/** 锟揭边憋拷缘锟斤拷锟斤拷*/
+  margin-top:-4px;							/** 锟斤拷锟斤拷锟斤拷缘锟斤拷锟斤拷*/
+  font: bold 10px/34px Helvetica, Arial, sans-serif;
+  color: #333;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.6);  /** 锟斤拷锟斤拷锟斤拷影*/
+}
+
+.progress-val {
+  float: right;								/** 锟揭边革拷锟斤拷*/
+  margin-right:0px;						/** 锟揭边憋拷缘锟斤拷锟斤拷*/
+  margin-top:-8px;							/** 锟斤拷锟斤拷锟斤拷缘锟斤拷锟斤拷*/
+  font: bold 10px/34px Helvetica, Arial, sans-serif;
+  color: #333;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.6);  /** 锟斤拷锟斤拷锟斤拷影*/
+}
+
+.progress-val2 {
+  float: right;								/** 锟揭边革拷锟斤拷*/
+  margin-right:-20px;						/** 锟揭边憋拷缘锟斤拷锟斤拷*/
+  margin-top:-9px;							/** 锟斤拷锟斤拷锟斤拷缘锟斤拷锟斤拷*/
+  font: bold 10px/34px Helvetica, Arial, sans-serif;
+  color: #00ff30;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.6);  /** 锟斤拷锟斤拷锟斤拷影*/
+}
+.progress-val3 {
+  float: left;								 /**锟揭边革拷锟斤拷*/
+  margin-left:100px;
+ /** margin-right:-20px;						 锟揭边憋拷缘锟斤拷锟斤拷*/
+  margin-top:-9px;							/** 锟斤拷锟斤拷锟斤拷缘锟斤拷锟斤拷*/
+  font: bold 10px/34px Helvetica, Arial, sans-serif;
+  color: #000000;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.6);  /** 锟斤拷锟斤拷锟斤拷影*/
+}
+
+.progress {
+  overflow: hidden; 
+  padding: 0 60px; 
+  height: 24px;
+  background: #d3d5d9;
+  border-radius: 5px;
+  /**font: bold 15px/34px Helvetica, Arial, sans-serif;*/
+  background-image: -webkit-linear-gradient(top, #ebecef, #bfc3c7);
+  background-image: -moz-linear-gradient(top, #ebecef, #bfc3c7);
+  background-image: -o-linear-gradient(top, #ebecef, #bfc3c7);
+  background-image: linear-gradient(to bottom, #ebecef, #bfc3c7);
+  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.8), 0 2px 4px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(0, 0, 0, 0.1), 0 0 0 6px #b6babe, 0 7px rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.8), 0 2px 4px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(0, 0, 0, 0.1), 0 0 0 1.5px #b6babe, 0 7px rgba(255, 255, 255, 0.1);
+}
+
+.progress_1{
+  overflow: hidden; 
+  padding: 0 60px; 
+  height: 24px;
+  background: #d3d5d9;
+  border-radius: 5px;
+  /**font: bold 15px/34px Helvetica, Arial, sans-serif;*/
+  background-image: -webkit-linear-gradient(top, #ebecef, #bfc3c7);
+  background-image: -moz-linear-gradient(top, #ebecef, #bfc3c7);
+  background-image: -o-linear-gradient(top, #ebecef, #bfc3c7);
+  background-image: linear-gradient(to bottom, #ebecef, #bfc3c7);
+  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.8), 0 2px 4px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(0, 0, 0, 0.1), 0 0 0 6px #b6babe, 0 7px rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.8), 0 2px 4px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(0, 0, 0, 0.1), 0 0 0 1.5px #b6babe, 0 7px rgba(255, 255, 255, 0.1);
+}
+
+
+.progress-bar_1 {
+ /** width: 10%;
+   background-color: #f63a0f; */
+  
+  margin-top:4px;
+  margin-left:-57px;
+  position: relative;
+  height: 16px;
+  border-radius: 4px;
+  -webkit-transition: 0.4s linear;
+  -moz-transition: 0.4s linear;
+  -o-transition: 0.4s linear;
+  transition: 0.4s linear;
+  -webkit-transition-property: width, background-color;
+  -moz-transition-property: width, background-color;
+  -o-transition-property: width, background-color;
+  transition-property: width, background-color;
+  -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+}
+
+.progress-bar {  
+  margin-top:-3px;
+  margin-left:0px;
+  position: relative;
+  height: 16px;
+  border-radius: 4px;
+  -webkit-transition: 0.4s linear;
+  -moz-transition: 0.4s linear;
+  -o-transition: 0.4s linear;
+  transition: 0.4s linear;
+  -webkit-transition-property: width, background-color;
+  -moz-transition-property: width, background-color;
+  -o-transition-property: width, background-color;
+  transition-property: width, background-color;
+  -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+}
+
+
+.progress-bar2 {  
+  margin-top:-16px;  				 /** 锟诫顶锟斤拷木锟斤拷锟�*/
+  margin-left:0px;			 	 /** 锟斤拷锟斤拷叩木锟斤拷锟�*/
+  position: relative;			 /** 锟斤拷锟轿伙拷锟�*/
+  height: 16px;					 /** 锟斤拷却锟竭讹拷 */
+  border-radius: 4px;
+  -webkit-transition: 0.4s linear;
+  -moz-transition: 0.4s linear;
+  -o-transition: 0.4s linear;
+  transition: 0.4s linear;
+  -webkit-transition-property: width, background-color;
+  -moz-transition-property: width, background-color;
+  -o-transition-property: width, background-color;
+  transition-property: width, background-color;
+  -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+}
+
+.progress-bar3 {
+	width:234px;
+  /*width: 100%;*/
+  background: #b8b8b8;
+  margin-top:7px;  				 /** 锟诫顶锟斤拷木锟斤拷锟�*/
+  margin-left:-57px;			 /** 锟斤拷锟斤拷叩木锟斤拷锟�*/
+  position: relative;			 /** 锟斤拷锟轿伙拷锟�*/
+  height: 16px;					 /** 锟斤拷却锟竭讹拷 */
+  border-radius: 4px;
+  -webkit-transition: 0.4s linear;
+  -moz-transition: 0.4s linear;
+  -o-transition: 0.4s linear;
+  transition: 0.4s linear;
+  -webkit-transition-property: width, background-color;
+  -moz-transition-property: width, background-color;
+  -o-transition-property: width, background-color;
+  transition-property: width, background-color;
+  -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.6);
+   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.6);
+}
+
+.progress-bar:before, .progress-bar:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.progress-bar:before {
+  bottom: 0;
+  border-radius: 4px 4px 0 0;
+}
+.progress-bar:after {
+  z-index: 2;
+  bottom: 45%;
+  border-radius: 4px;
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+}
+
+
+
+
+.smt-line-progress {
+  padding: 4px;										/*锟斤拷锟斤拷锟斤拷展锟斤拷锟�/
+  background: rgba(0, 0, 0, 0.25);			/*锟斤拷锟斤拷锟斤拷色*/
+  border-radius: 6px;								/*锟斤拷锟斤拷圆锟角半径*/
+  bottom: 45%;												/*锟矫百分憋拷锟斤拷锟斤拷锟斤拷锟斤拷撞锟斤拷锟狡拷锟斤拷锟�/
+  width:120px;											/*锟斤拷锟�锟斤拷锟节憋拷锟斤拷转锟斤拷锟斤拷指锟竭讹拷*/
+  height:100px;										/*锟竭讹拷 锟斤拷锟节憋拷锟斤拷转锟斤拷锟斤拷指锟斤拷锟�/
+  -webkit-transform:rotate(180deg);	 	/*锟斤拷锟斤拷270锟斤拷转*/
+  -moz-transform:rotate(180deg);	
+  -o-transform:rotate(180deg);	
+  -ms-transform:rotate(180deg);	
+  transform:rotate(180deg);	
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);/*锟斤拷影锟斤拷锟斤拷 */
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.smt-xbc-progress {
+  padding: 4px;										/*锟斤拷锟斤拷锟斤拷展锟斤拷锟�/
+  background: rgba(0, 0, 0, 0.25);			/*锟斤拷锟斤拷锟斤拷色*/
+  border-radius: 6px;								/*锟斤拷锟斤拷圆锟角半径*/
+  bottom: 45%;												/*锟矫百分憋拷锟斤拷锟斤拷锟斤拷锟斤拷撞锟斤拷锟狡拷锟斤拷锟�/
+  width:120px;											/*锟斤拷锟�锟斤拷锟节憋拷锟斤拷转锟斤拷锟斤拷指锟竭讹拷*/
+  height:100px;										/*锟竭讹拷 锟斤拷锟节憋拷锟斤拷转锟斤拷锟斤拷指锟斤拷锟�/
+  -webkit-transform:rotate(180deg);	 	/*锟斤拷锟斤拷270锟斤拷转*/
+  -moz-transform:rotate(180deg);	
+  -o-transform:rotate(180deg);	
+  -ms-transform:rotate(180deg);	
+  transform:rotate(180deg);	
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);/*锟斤拷影锟斤拷锟斤拷 */
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.smt-line-progress-bar {
+ /* height : 50%;*/
+  background-color: #f27011;
+  position: relative;									/*位锟斤拷锟斤拷为锟斤拷锟轿伙拷锟�/
+  width: 111px;										/*锟竭讹拷 锟斤拷锟节憋拷锟斤拷转锟斤拷锟斤拷指锟斤拷锟�/
+  border-radius: 4px;								/*圆锟角半径*/
+  -webkit-transition: 0.4s linear;				/*锟斤拷鹊锟绞憋拷洌拷凸锟饺碉拷锟斤拷锟斤拷 锟斤拷锟酵癸拷锟�/
+  -moz-transition: 0.4s linear;
+  -o-transition: 0.4s linear;
+  transition: 0.4s linear;
+  -webkit-transition-property: height, background-color;	/*指锟斤拷要锟斤拷锟叫癸拷傻锟斤拷锟斤拷锟�/
+  -moz-transition-property: height, background-color;
+  -o-transition-property: height, background-color;
+  transition-property: height, background-color;
+  -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);/*锟斤拷影锟斤拷锟斤拷 */
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+}
+/** -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);*/
+
+.smt-xbc-progress-bar {
+ /* height : 50%;*/
+  background-color: #f27011;
+  position: relative;									/*位锟斤拷锟斤拷为锟斤拷锟轿伙拷锟�/
+  width: 111px;										/*锟竭讹拷 锟斤拷锟节憋拷锟斤拷转锟斤拷锟斤拷指锟斤拷锟�/
+  border-radius: 4px;								/*圆锟角半径*/
+  -webkit-transition: 0.4s linear;				/*锟斤拷鹊锟绞憋拷洌拷凸锟饺碉拷锟斤拷锟斤拷 锟斤拷锟酵癸拷锟�/
+  -moz-transition: 0.4s linear;
+  -o-transition: 0.4s linear;
+  transition: 0.4s linear;
+  -webkit-transition-property: height, background-color;	/*指锟斤拷要锟斤拷锟叫癸拷傻锟斤拷锟斤拷锟�/
+  -moz-transition-property: height, background-color;
+  -o-transition-property: height, background-color;
+  transition-property: height, background-color;
+  -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);/*锟斤拷影锟斤拷锟斤拷 */
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+}
+
+.smt-line-progress_val{
+   -webkit-transform:rotate(180deg);	 	/*锟斤拷锟斤拷180锟斤拷转*/
+   -moz-transform:rotate(180deg);	
+   -o-transform:rotate(180deg);	
+   -ms-transform:rotate(180deg);	
+    transform:rotate(180deg);	
+	position:absolute;								/*锟斤拷锟轿伙拷锟�relative*/	
+	top:70px;
+	left:15px;
+
+}
+
+.smt-xbc-progress_val{
+   -webkit-transform:rotate(180deg);	 	/*锟斤拷锟斤拷180锟斤拷转*/
+   -moz-transform:rotate(180deg);	
+   -o-transform:rotate(180deg);	
+   -ms-transform:rotate(180deg);	
+    transform:rotate(180deg);	
+	position:absolute;								/*锟斤拷锟轿伙拷锟�relative*/	
+	top:70px;
+	left:15px;
+
+}
+
+.smt-line-progress_val2{
+  -webkit-transform:rotate(180deg);	 	/*锟斤拷锟斤拷180锟斤拷转*/
+  -moz-transform:rotate(180deg);	
+  -o-transform:rotate(180deg);	
+  -ms-transform:rotate(180deg);	
+  transform:rotate(180deg);	
+	position:absolute;							/*relative	absolute*/	
+	top:5px;
+	left:1px;
+}
+
+.smt-xbc-progress_val2{
+  -webkit-transform:rotate(180deg);	 	/*锟斤拷锟斤拷180锟斤拷转*/
+  -moz-transform:rotate(180deg);	
+  -o-transform:rotate(180deg);	
+  -ms-transform:rotate(180deg);	
+  transform:rotate(180deg);	
+	position:absolute;								/*锟斤拷锟轿伙拷锟�relative*/	
+	top:5px;
+	left:5px;
+}
+
+
+.smt-line-progress_val3{
+  -webkit-transform:rotate(180deg);	 	/*锟斤拷锟斤拷180锟斤拷转*/
+  -moz-transform:rotate(180deg);	
+  -o-transform:rotate(180deg);	
+  -ms-transform:rotate(180deg);	
+  transform:rotate(180deg);	
+	position:absolute;								/*锟斤拷锟轿伙拷锟�relative*/	
+	top:5px;
+}
+
+
+.smt-line-progress-bar:before, .progress-bar:after {
+  content: '';
+  position: absolute; 					 /*位锟斤拷为锟斤拷锟轿伙拷锟�/
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.smt-line-progress-bar:before {
+  top: 0;
+  border-radius: 4px 4px 0 0;
+}
+.smt-line-progress-bar:after {
+  z-index: 2;									/*锟斤拷锟斤拷锟斤拷值锟斤拷锟斤拷锟斤拷锟斤拷蛹锟斤拷锟�/
+  bottom: 45%;
+  border-radius: 4px;
+  background-image: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+}
+
+.progress-images{
+	float:left;
+	margin-left:250px;
+	margin-top:-24px;  
+}
+
+body{font-size:12px;background-color:#FFF;overflow:hidden;}
+
+.titletd td{background:url('images/nav_bg.gif');padding:15px;text-align:center;height:48;font-size:18px;}
+.datatd td{background-color:#FFFFFF;height:30px;padding-left:2px;font-size:12px;}
+
+/** .datatd td{height:30px;text-align:center;} */

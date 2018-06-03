@@ -1,0 +1,20 @@
+Ext.define("core.course_manage.model.ReservationCourseModel",{
+	extend:'Ext.data.Model',
+	fields:[
+		{name:'WorkprocedureReservationCourseId'},
+		{name:'WorkprocedureCourseId'},
+		{name:'CourseTitle'},
+		{name:'ReservationTime'},
+		{name:'ReservationSite'},
+		{name:'Lecturer'},
+		{name:'NumOfExpected'},
+		{name:'NumOfActual'},
+		{name:'CreateUserId'},
+		{name:'CreateTime'},
+		{name:'ModifyUserId'},
+		{name:'ModifyTime'},
+		{name:'ReservationRemark'},
+		{name:'WhetherExamination'},
+		{name:'FinishTime'}
+	]
+});

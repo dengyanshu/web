@@ -1,0 +1,21 @@
+Ext.define("core.casetrace_query.model.Model",{
+	extend:'Ext.data.Model',
+	fields:[
+		{name:'caseTraceId'},
+		{name:'disposeStaffid'},
+		{name:'disposeUser'},
+		{name:'caseNumber'},
+		{name:'caseName'},
+		{name:'caseTask'},
+		{name:'caseType'},
+		{name:'applyTime'},
+		{name:'demandTime'},
+		{name:'predictAccomplishTime'},
+		{name:'realityAccomplishTime'},
+		{name:'status'},
+		{name:'expatiation'},
+		{name:'updateTime'},
+		{name:'applicant'},
+		{name:'createTime'}
+	]	
+});

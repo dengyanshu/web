@@ -1,0 +1,21 @@
+Ext.define("core.grid_test.view.TestPanel",{
+	extend:"core.app.base.BasePanel",
+	alias:"widget.testpanel",
+	funCode:"testmodule_main",
+	funData:{
+	        action:"/test/testAction", //请求Action
+	        whereSql:"",//表格查询条件
+	        orderSql:"",//表格排序条件
+	        pkName:"name",
+	        modelName:"com.desktop.model.Test",//实体全路径
+	        tableName:"",//表名
+	        defaultObj:{name:"@createUserName@",birthday:"@createTime@"},//默认信息，用于表格添加的时候字段默认值
+	        childFun:[]
+	},
+	items:[{
+		xtype:"testgrid"
+	},{
+		xtype:"testform",
+		hidden:true
+	}]
+});

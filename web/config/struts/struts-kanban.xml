@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+	"http://struts.apache.org/dtds/struts-2.1.dtd">
+
+<struts>
+	 <package name="kanban" namespace="/kanban" extends="pc-default">
+	 	<action name="next_mo" class="next_mo">
+			<result type="plainText" /> 
+		</action>
+
+		<action name="ck_today_dip_bl" class="ck_today_dip_bl">
+			<result type="plainText" />
+		</action>
+		<action name="ck_today_smt_bl" class="ck_today_smt_bl">
+			<result type="plainText" />
+		</action>
+		<action name="ck_tomorrow_dip_bl" class="ck_tomorrow_dip_bl">
+			<result type="plainText" />
+		</action>
+		<action name="ck_tomorrow_smt_bl" class="ck_tomorrow_smt_bl">
+			<result type="plainText" />
+		</action>
+		<action name="ck_bl_list" class="ck_bl_list">
+			<result type="plainText" /> 
+		</action>
+		<action name="ck_smt_ll" class="ck_smt_ll">
+			<result type="plainText" />
+		</action>
+		<action name="ck_smt_ll_list" class="ck_smt_ll_list">
+			<result type="plainText" /> 
+		</action>
+		
+		<action name="dip_lts" class="dip_lts">
+			<result type="plainText" /> 
+		</action>		
+		<action name="dip_cll" class="dip_cll">
+			<result type="plainText" /> 
+		</action>
+		<action name="dip_dfl" class="dip_dfl">
+			<result type="plainText" /> 
+		</action>	
+		<action name="dip_dfl_list" class="dip_dfl_list">
+			<result type="plainText" /> 
+		</action>	
+		<action name="dip_xstore" class="dip_xstore">
+			<result type="plainText" /> 
+		</action>		
+		<action name="dip_xstore_list" class="dip_xstore_list">
+			<result type="plainText" /> 
+		</action>	
+		<action name="dip_hr" class="dip_hr">
+			<result type="plainText" /> 
+		</action>
+		<action name="dip_sl" class="dip_sl">
+			<result type="plainText" /> 
+		</action>
+		<action name="dip_zc" class="dip_zc">
+			<result type="plainText" /> 
+		</action>
+		<action name="dip_zcb" class="dip_zcb">
+			<result type="plainText" /> 
+		</action>
+		<action name="dip_gc" class="dip_gc">
+			<result type="plainText" /> 
+		</action>
+		<action name="dip_scx" class="dip_scx">
+			<result type="plainText" /> 
+		</action>
+		<action name="dip_sl_list" class="dip_sl_list">
+			<result type="plainText" /> 
+		</action>
+		<action name="dip_zc_list" class="dip_zc_list">
+			<result type="plainText" /> 
+		</action>
+		<action name="dip_zcb_list" class="dip_zcb_list">
+			<result type="plainText" /> 
+		</action>
+		<action name="dip_gc_list" class="dip_gc_list">
+			<result type="plainText" /> 
+		</action>
+		<action name="dip_mt" class="dip_mt">
+			<result type="plainText" /> 
+		</action>	
+		<action name="dip_mt_list" class="dip_mt_list">
+			<result type="plainText" /> 
+		</action>		
+		<action name="smt_xbc_sl_list" class="smt_xbc_sl_list">
+			<result type="plainText" /> 
+		</action>
+		
+		<action name="smt_cn" class="smt_cn">
+			<result type="plainText" /> 
+		</action>	
+		<action name="smt_cc" class="smt_cc">
+			<result type="plainText" /> 
+		</action>	
+		<action name="smt_sl" class="smt_sl">
+			<result type="plainText" /> 
+		</action>
+		<action name="smt_sl_list" class="smt_sl_list">
+			<result type="plainText" /> 
+		</action>
+		<action name="smt_cc_list" class="smt_cc_list">
+			<result type="plainText" /> 
+		</action>
+		
+		<action name="smt_sc" class="smt_sc">
+			<result type="plainText" /> 
+		</action>
+	
+		<action name="smt_cn_kanban" class="smt_cn_kanban">
+			<result type="plainText" /> 
+		</action>
+	
+	
+	    <action name="smt_chaoling_kanban" class="smt_chaoling_kanban">
+			<result type="plainText" /> 
+		</action>
+		
+		  <action name="smt_xbckc_kanban" class="smt_xbckc_kanban">
+			<result type="plainText" /> 
+		</action>
+		
+		 <action name="ff_line_lines" class="ff_line_lines">
+			<result type="plainText" /> 
+		</action>
+		
+		 <action name="ff_line_sl" class="ff_line_sl">
+			<result type="plainText" /> 
+		</action>
+		<action name="ff_sl_list" class="ff_sl_list">
+			<result type="plainText" /> 
+		</action>
+		
+		<action name="smt_sb" class="smt_sb">
+			<result type="plainText" /> 
+		</action>
+		<action name="iqc_kanban" class="iqc_kanban">
+			<result type="plainText" /> 
+		</action>
+		
+		
+		<action name="hw_sl_list" class="hw_sl_list">
+			<result type="plainText" /> 
+		</action>
+	   <action name="sb_kanban" class="sb_kanban">
+			<result type="plainText" /> 
+		</action>
+	
+	  <action name="silou_line_kanban" class="silou_line_kanban">
+			<result type="plainText" /> 
+		</action>
+		
+		 <action name="silou_site" class="silou_site">
+			<result type="plainText" /> 
+		</action>
+		<action name="dc_sh_kanban" class="dc_sh_kanban">
+			<result type="plainText" /> 
+		</action>
+		
+		
+		
+		<action name="smt_rpc_ck" class="smt_rpc_ck">
+			<result type="plainText" /> 
+		</action>
+		<action name="smt_rpc_xb" class="smt_rpc_xb">
+			<result type="plainText" /> 
+		</action>
+		<action name="smt_rpc_cx" class="smt_rpc_cx">
+			<result type="plainText" /> 
+		</action>
+		
+		
+		<action name="tj_next_mo" class="tj_next_mo">
+			<result type="plainText" /> 
+		</action>
+		<action name="tj_ck_today_dip_bl" class="tj_ck_today_dip_bl">
+			<result type="plainText" />
+		</action>
+		<action name="tj_ck_today_smt_bl" class="tj_ck_today_smt_bl">
+			<result type="plainText" />
+		</action>
+		<action name="tj_ck_tomorrow_dip_bl" class="tj_ck_tomorrow_dip_bl">
+			<result type="plainText" />
+		</action>
+		<action name="tj_ck_tomorrow_smt_bl" class="tj_ck_tomorrow_smt_bl">
+			<result type="plainText" />
+		</action>
+		<action name="tj_ck_bl_list" class="tj_ck_bl_list">
+			<result type="plainText" /> 
+		</action>
+		
+		<action name="tj_smt_sl" class="tj_smt_sl">
+			<result type="plainText" /> 
+		</action>
+		<action name="tj_smt_sl_list" class="tj_smt_sl_list">
+			<result type="plainText" /> 
+		</action>
+		
+		<action name="tj_smt_cn" class="tj_smt_cn">
+			<result type="plainText" /> 
+		</action>
+
+		<action name="tj_led_mx" class="tj_led_mx">
+			<result type="plainText" /> 
+		</action>
+		<action name="tj_led_zc" class="tj_led_zc">
+			<result type="plainText" /> 
+		</action>
+		<action name="tj_led_mx_list" class="tj_led_mx_list">
+			<result type="plainText" /> 
+		</action>
+		<action name="tj_led_zc_list" class="tj_led_zc_list">
+			<result type="plainText" /> 
+		</action>
+		
+		<action name="tj_sc_zm" class="tj_sc_zm">
+			<result type="plainText" /> 
+		</action>
+		<action name="tj_sc_sh" class="tj_sc_sh">
+			<result type="plainText" /> 
+		</action>
+		<action name="tj_sc_zm_list" class="tj_sc_zm_list">
+			<result type="plainText" /> 
+		</action>
+		
+		<action name="tj_sc_smt" class="tj_sc_smt">
+			<result type="plainText" /> 
+		</action>
+		<action name="tj_sc_smt_list" class="tj_sc_smt_list">
+			<result type="plainText" /> 
+		</action>
+		
+		<action name="tj_sc_led" class="tj_sc_led">
+			<result type="plainText" /> 
+		</action>
+		<action name="tj_sc_led_list" class="tj_sc_led_list">
+			<result type="plainText" /> 
+		</action>
+
+
+		<action name="smt_line_sl" class="smt_line_sl">
+			<result type="plainText" /> 
+		</action>
+		<action name="smt_line_lines" class="smt_line_lines">
+			<result type="plainText" /> 
+		</action>
+		
+		
+		
+    </package>
+</struts>
+	
+
+
+
+	

@@ -1,0 +1,11 @@
+Ext.define("core.sop.store.delete.Store",{
+	extend:'Ext.data.Store',
+	model:'core.sop.model.search.Model',
+	pageSize:15,
+	proxy:{
+		type:'pagingmemory',
+		render:{
+			type:'array'
+		}
+	}
+});

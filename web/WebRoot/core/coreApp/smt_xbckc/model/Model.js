@@ -1,0 +1,13 @@
+Ext.define("core.smt_xbckc.model.Model",{
+	extend:'Ext.data.Model',
+	fields:[
+		{name:'row'},
+		{name:'productname'},
+		{name:'productdescri'},
+		{name:'stock'},
+		{name:'sumqty'},
+		{name:'mzqty'},
+		{name:'isalert_sum'},
+		{name:'isalert_mzqty'},
+	]	
+});

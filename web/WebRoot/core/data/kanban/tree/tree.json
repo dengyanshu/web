@@ -1,0 +1,86 @@
+﻿{
+	smt:[	
+			{id:'smt-kanban-01-01',text:'SMT上料',name:'smt_sl_kb',leaf:true},
+			{id:'smt-kanban-01-02',text:'SMT产能',name:'smt_cn_kb',leaf:true},
+			{id:'smt-kanban-01-03',text:'SMT产出',name:'smt_cc_kb',leaf:true}
+	],
+	smt_rpc:[
+			{id:'smt-rpc-kanban-01-01',text:'仓库拣料',name:'smt_ck_kb',leaf:true},
+			{id:'smt-rpc-kanban-01-02',text:'线边仓备料',name:'smt_xb_kb',leaf:true},
+			{id:'smt-rpc-kanban-01-03',text:'产线上料',name:'smt_cx_kb',leaf:true}
+	],
+	ck:[
+			{id:'ck-kanban-01-01',text:'今日DIP备料',name:'ck_today_dip_bl_kb',leaf:true},
+			{id:'ck-kanban-01-02',text:'今日SMT备料',name:'ck_today_smt_bl_kb',leaf:true},
+			{id:'ck-kanban-01-03',text:'明日DIP备料',name:'ck_tomorrow_dip_bl_kb',leaf:true},
+			{id:'ck-kanban-01-04',text:'明日SMT备料',name:'ck_tomorrow_smt_bl_kb',leaf:true},
+			{id:'ck-kanban-01-05',text:'SMT领料',name:'ck_smt_ll_kb',leaf:true}
+	],
+		study_ck:[
+			{id:'ck-kanban-01-01',text:'今日DIP备料',name:'ck_today_dip_bl_kb',leaf:true}
+			
+	],
+	sc:[	
+			{id:'sc-kanban-01-01',text:'生产看板',name:'sc_kb',leaf:true}
+	],
+	dip:[	
+			//{id:'dip-kanban-01-01',text:'DIP制程',name:'dip_zc_kb',leaf:true},
+			//{id:'dip-kanban-01-02',text:'DIP上料明细',name:'dip_sl_kb',leaf:true},
+			//{id:'dip-kanban-01-03',text:'组测包产能查询',name:'dip_zcb_kb',leaf:true},
+			{id:'dip-kanban-01-04',text:'产能工时报表',name:'dip_scx_kb',leaf:true},
+			{id:'dip-kanban-01-05',text:'工时效率汇总报表',name:'dip_lts_kb',leaf:true},
+			{id:'dip-kanban-01-06',text:'规程看板',name:'dip_gc_kb',leaf:true},
+			//{id:'dip-kanban-01-07',text:'考勤人力',name:'dip_hr_kb',leaf:true},
+			//{id:'dip-kanban-01-08',text:'多发料看板',name:'dip_dfl_kb',leaf:true},
+			//{id:'dip-kanban-01-09',text:'剩余料看板',name:'dip_xstore_kb',leaf:true},
+			//{id:'dip-kanban-01-10',text:'超领料报表',name:'dip_cll_kb',leaf:true},
+			{id:'dip-kanban-01-11',text:'SMT生产环节状态监控',name:'dip_mt_kb',leaf:true},
+			{id:'dip-kanban-01-12',text:'后段生产环节状态监控',name:'dip_ff_kb',leaf:true}
+
+	],
+	
+	smtsb:[	
+			{id:'smtsb-kanban-01-01',text:'飞达',name:'smtsb_fd_kb',leaf:true},
+			{id:'smtsb-kanban-01-02',text:'钢网',name:'smtsb_gw_kb',leaf:true},
+			{id:'smtsb-kanban-01-03',text:'治具',name:'smtsb_zj_kb',leaf:true},
+			{id:'smtsb-kanban-01-04',text:'刮刀',name:'smtsb_gd_kb',leaf:true},
+			{id:'smtsb-kanban-01-05',text:'吸嘴',name:'smtsb_xz_kb',leaf:true},
+	],
+	
+	
+		smtsb2:[	
+			{id:'smtsb2-kanban-01-01',text:'飞达',name:'smtsb2_fd_kb',leaf:true},
+			{id:'smtsb2-kanban-01-02',text:'钢网',name:'smtsb2_gw_kb',leaf:true},
+			{id:'smtsb2-kanban-01-03',text:'治具',name:'smtsb2_zj_kb',leaf:true},
+			{id:'smtsb2-kanban-01-04',text:'刮刀',name:'smtsb2_gd_kb',leaf:true},
+			{id:'smtsb2-kanban-01-05',text:'吸嘴',name:'smtsb2_xz_kb',leaf:true},
+	],
+	
+	tj_ck:[				
+			{id:'tj_ck-kanban-01-01',text:'天津今日DIP备料',name:'tj_ck_today_dip_bl_kb',leaf:true},
+			{id:'tj_ck-kanban-01-02',text:'天津今日SMT备料',name:'tj_ck_today_smt_bl_kb',leaf:true},
+			{id:'tj_ck-kanban-01-03',text:'天津明日DIP备料',name:'tj_ck_tomorrow_dip_bl_kb',leaf:true},
+			{id:'tj_ck-kanban-01-04',text:'天津明日SMT备料',name:'tj_ck_tomorrow_smt_bl_kb',leaf:true}
+	],
+	tj_smt:[	
+			{id:'tj-smt-kanban-01-01',text:'SMT上料',name:'tj_smt_sl_kb',leaf:true},
+			{id:'tj-smt-kanban-01-02',text:'SMT产能',name:'tj_smt_cn_kb',leaf:true}
+	],
+	tj_led:[	
+			{id:'tj-led-kanban-01-01',text:'LED明细',name:'tj_led_mx_kb',leaf:true},
+			{id:'tj-led-kanban-01-02',text:'LED制程',name:'tj_led_zc_kb',leaf:true}
+	],
+	tj_sc:[	
+			{id:'tj-sc-kanban-01-01',text:'电源生产看板',name:'tj_sc_zm_kb',leaf:true},
+			{id:'tj-sc-kanban-01-02',text:'手环生产看板',name:'tj_sc_sh_kb',leaf:true},
+			{id:'tj-sc-kanban-01-03',text:'LED生产看板',name:'tj_sc_led_kb',leaf:true},
+			{id:'tj-sc-kanban-01-04',text:'SMT生产看板',name:'tj_sc_smt_kb',leaf:true}
+	],
+
+	plan:[	
+			{id:'plan-kanban-01-01',text:'下周人力需求',name:'planmanpower',leaf:true},
+			//{id:'plan-kanban-01-02',text:'下周产线生产安排',name:'planlinesmanufacture',leaf:true},
+			{id:'plan-kanban-01-03',text:'下周产线生产安排',name:'planfloor',leaf:true}
+	],
+	
+}

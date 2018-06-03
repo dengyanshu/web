@@ -1,0 +1,9 @@
+Ext.define("core.casetrace_query.view.Main",{
+	extend:'Ext.Panel',
+	alias:'widget.casetracequery',
+	layout:'border',
+	items:[
+		{xtype:'casetrace_search'},
+		{xtype:'casetrace_result'}
+	]			
+});

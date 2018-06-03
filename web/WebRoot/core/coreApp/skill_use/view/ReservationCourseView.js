@@ -1,0 +1,27 @@
+﻿/***************************************************************************
+  								<导航类> 
+ ***************************************************************************/
+ Ext.define("core.skill_use.view.ReservationCourseView",{
+ 	extend:'Ext.grid.Panel',
+ 	alias:'widget.skilluse_reservationcourseview',
+    	border:false,	
+   	 //height:600,
+ 	title:'课程清单',
+ 	collapsible:true,
+ 	split:true,
+ 	margins:'5 2 5 5',
+ 	width:200,
+ 	columns:[
+		{dataIndex:'CourseTitle',text:'课程清单',flex:1},
+		{dataIndex:'ReservationTime',text:'时间',hidden:true},
+		{dataIndex:'ReservationSite',text:'地点',hidden:true},
+		{dataIndex:'Lecturer',text:'讲师',hidden:true},
+		{dataIndex:'NumOfExpected',text:'应到人数',hidden:true},
+		{dataIndex:'NumOfActual',text:'实到人数',hidden:true},
+		{dataIndex:'CreatTime',text:'创建时间',hidden:true},
+		{dataIndex:'ModifyTime',text:'修改时间',hidden:true},
+		{dataIndex:'ReservationRemark',text:'备注信息',hidden:true},
+		{dataIndex:'WrokprocedureReservationCourseId',text:'培训预约课程ID',hidden:true}
+ 	],
+	store:'core.skill_use.store.ReservationCourseStore'
+ });

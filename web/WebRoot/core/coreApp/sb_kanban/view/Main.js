@@ -1,0 +1,9 @@
+Ext.define("core.sb_kanban.view.Main",{
+	extend:'Ext.Panel',
+	alias:'widget.sb_kanban_main',
+	layout:'border',
+	items:[
+	    {xtype:'sb_kanban_search'},
+		{xtype:'sb_kanban_listview'}
+	]			
+});

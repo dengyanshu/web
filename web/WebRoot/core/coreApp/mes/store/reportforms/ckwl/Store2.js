@@ -1,0 +1,13 @@
+Ext.define("core.mes.store.reportforms.ckwl.Store2",{
+	extend:'Ext.data.Store',
+	remoteSort:true,
+   	model:'core.mes.model.reportforms.ckwl.Model2',
+    pageSize:30,
+    proxy:{
+    	type:'pagingmemory',
+    	reader:{
+    		type:'json',
+    		root:'data'
+    	}
+    }
+});

@@ -1,0 +1,44 @@
+Ext.define("core.skill_manage.view.CourseAndSkill",{
+	extend:'Ext.Panel',
+	alias:'widget.skillmanage_courseandskill',
+	layout:'border',
+	items:[
+		{
+			xtype:'form',
+			region:'north',
+			height:90,
+			bodyPadding:5,
+			defaultType:'textfield',
+			layout:'absolute',
+			labelAlign:"right",
+            defaults:{
+				labelAlign:"right",
+				msgTarget:'under'
+			},
+			items:[
+				{
+					fieldLabel:'请输入课程名',
+					name:'CourseTitle',
+					//allowBlank:false,
+					x:180,
+					y:10
+				}
+			],
+			buttons:[
+				{text:'提交',action:'submit'},
+				{text:'重置',action:'reset'}
+			]
+		},
+		{
+			xtype:'gridpanel',
+			region:'center',
+			columns:[
+				{xtype:'rownumberer',text:'序号',width:50},
+				{dataIndex:'CourseTitle',text:'课程',width:260},
+				{dataIndex:'SkillName',text:'技能',width:260}
+			],
+			store:'core.skill_manage.store.CourseAndSkillStore'
+		}
+	]
+	
+});

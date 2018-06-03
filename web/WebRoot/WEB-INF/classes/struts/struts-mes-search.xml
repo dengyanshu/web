@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+	"http://struts.apache.org/dtds/struts-2.1.dtd">
+
+<struts>
+	 <package name="search" namespace="/mes/search" extends="pc-default">
+		<action name="mes_smt_line_scan_interval_time_list" class="mes_smt_line_scan_interval_time_list">
+			<result type="plainText" />
+		</action>	
+		<action name="mes_smt_line_scan_interval_time_main" class="mes_smt_line_scan_interval_time_main">
+			<result type="plainText" />
+		</action>	
+	</package>
+</struts>
+	

@@ -1,0 +1,13 @@
+Ext.define('core.course_manage.store.UserSkillStore',{
+	extend:'Ext.data.Store',
+	model:'core.course_manage.model.UserSkillModel',
+	autoLoad:false,
+	proxy:{
+		type:'ajax',
+		url:'/web/skill/skillmanage_userskill!getResult.action',
+		reader:{
+			type:'json',
+			root:'data'
+		}
+	}	
+});

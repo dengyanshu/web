@@ -1,0 +1,15 @@
+{
+	skill:[	
+			{id:'skill-manage-01-01',text:'技能管理',name:'skillmanage_skill',leaf:true},
+			{id:'skill-manage-01-02',text:'课程管理',name:'skillmanage_course',leaf:true},	
+			{id:'skill-manage-01-03',text:'会议室刷卡机',name:'skillmanage_conference_pos',leaf:true},
+			{id:'skill-manage-01-04',text:'课程技能关系查询',name:'skillmanage_courseandskill',leaf:true}
+	],
+	course:[	
+			{id:'course-manage-01-01',text:'查询技能',name:'coursemanage_searchuserskill',leaf:true},
+			{id:'course-manage-01-02',text:'预约课程',name:'coursemanage_reservationcourse',leaf:true},
+			{id:'course-manage-01-03',text:'课程审核',name:'coursemanage_check',leaf:true},
+			{id:'course-manage-01-04',text:'已审核预约课程',name:'coursemanage_search_reservationcourse',leaf:true},
+			{id:'course-manage-01-05',text:'课程人员查询',name:'coursemanage_courseuserskill',leaf:true}
+	]
+}

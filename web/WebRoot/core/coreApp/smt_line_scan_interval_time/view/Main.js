@@ -1,0 +1,9 @@
+Ext.define("core.smt_line_scan_interval_time.view.Main",{
+	extend:'Ext.Panel',
+	alias:'widget.smt_line_scan_interval_time.main',
+	layout:'border',
+	items:[
+		{xtype:'smt_line_scan.interval_time.result',region:'center'},
+		{xtype:'smt_line_scan.interval_time.operate',region:'north'}
+	]
+});

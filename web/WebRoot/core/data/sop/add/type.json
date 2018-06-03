@@ -1,0 +1,8 @@
+{
+	type:[	
+			{id:'01-01',text:'查看SOP',name:'search',leaf:true},
+			{id:'01-02',text:'添加SOP',name:'add',leaf:true},
+			{id:'01-03',text:'删除SOP',name:'delete',leaf:true}
+	]
+
+}

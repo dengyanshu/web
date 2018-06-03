@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>test.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+    <script type="text/javascript">
+       function test(){
+         alert('test....');
+       }
+    </script>
+
+  </head>
+  
+  <body>
+    This is my HTML page. <br>
+    
+   
+    <button style="font-style:italic;font-weight: bolder; background: black;color:white; "  onclick="javascript:test()">包装</button>
+   
+    <input type="radio" name="type" value="组装"   >
+          <span style="transform:rotate(180deg);">组装</span>
+    <input type="radio" name="type" value="包装" checked="checked">包装
+    
+    <script type="text/javascript">
+          var date=new Date();
+          var title;
+          if(date.getHours()<20&&date.getHours()>=8){
+             //白班  取
+             date.setHours(8, 0, 0, 0);
+          }
+          else  if(date.getHours()>=20){
+             date.setHours(20, 0, 0, 0);
+          }
+          else{
+               date.setDate(date.getDate()-1);
+               date.setHours(20, 0, 0, 0);
+          }
+          title=date.toLocaleString()+"至";
+           date=new Date();
+           title=title+date.toLocaleString();
+           return title;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+Ext.define("core.smt_jitchaoling.model.Model",{
+	extend:'Ext.data.Model',
+	fields:[
+		{name:'PickingListId'},
+		{name:'MOName'},
+		{name:'PickingListName'},
+		{name:'StockName'},
+		{name:'PickingListStates'},
+		{name:'OA状态'}
+	]	
+});

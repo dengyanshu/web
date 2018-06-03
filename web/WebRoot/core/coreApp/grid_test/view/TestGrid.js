@@ -1,0 +1,23 @@
+Ext.define("core.grid_test.view.TestGrid",{
+	extend:"Ext.grid.Panel",
+	alias:"widget.testgrid",
+	selType:'checkboxmodel',
+	columns:[
+		{xtype:'rownumberer'},
+		{text:'ID',dataIndex:'Id',editor:{xtype:'textfield',allowBlank:false}},
+		{text:'姓名',dataIndex:'Name',editor:{xtype:'textfield',allowBlank:false}},
+		{text:'邮箱',dataIndex:'Email',editor:{xtype:'textfield',allowBlank:false}},
+		{text:'电话',dataIndex:'Phone',editor:{xtype:'textfield',allowBlank:false}}
+	],
+	tbar:[
+		{xtype:'button',text:'添加',ref:'add'},
+		{xtype:'button',text:'删除',ref:'delete'},
+		{xtype:'button',text:'保存',ref:'save'}
+	],
+	store:'core.grid_test.store.test1.Store',
+	initConpement:function(){
+		this.editing=Ext.create('Ext.grid.plugin.CellEditing',{clicksToEdit:1});
+		this.plugins=this.editing;
+		this.callParent(argments);
+	}	
+});

@@ -1,0 +1,9 @@
+Ext.define("core.xm_oba.view.Main",{
+	extend:'Ext.Panel',
+	alias:'widget.xm_oba_main',
+	layout:'border',
+	items:[
+		{xtype:'xm_oba_listview'},
+		{xtype:'xm_oba_chartview'}
+	]			
+});

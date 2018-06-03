@@ -1,0 +1,9 @@
+Ext.define("core.grid_test.model.test1.Model",{
+	extend:'Ext.data.Model',
+	fields:[
+		{name:'Id'},
+		{name:'Name'},
+		{name:'Email'},
+		{name:'Phone'}
+	]
+});

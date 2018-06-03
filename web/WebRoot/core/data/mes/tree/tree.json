@@ -1,0 +1,33 @@
+{
+	report_forms:[
+			{id:'01_01',text:'收料查询',name:'sl',leaf:true},
+			{id:'01_02',text:'IQC物料抽栓、检验查询',name:'iqc',leaf:true},
+			{id:'01_03',text:'上料记录查询',name:'sljl',leaf:true},
+			{id:'01_04',text:'直通率查询',name:'ztl',leaf:true},
+			{id:'01_05',text:'绑定关系',name:'bdgx',leaf:true},
+			{id:'01_06',text:'工单备料查询',name:'gdbl',leaf:true},
+			{id:'01_07',text:'维修查询',name:'wx',leaf:true},
+			{id:'01_08',text:'DIP维修',name:'dip_wx',leaf:true},
+			{id:'01_09',text:'工厂产线实际生产安排',name:'gccxsjscap',leaf:true},
+			{id:'01_10',text:'产能查询',name:'cn',leaf:true},
+			{id:'01_11',text:'数据链查询',name:'sjl',leaf:true},
+			{id:'01_12',text:'物料查询',name:'wl',leaf:true},
+			{id:'01_13',text:'入库查询',name:'rk',leaf:true},
+			{id:'01_14',text:'批号物料细明查询',name:'phwlxm',leaf:true},
+			{id:'01_15',text:'供应商物料信息查询',name:'gyswlxx',leaf:true},
+			{id:'01_16',text:'SMT设备保养记录查询',name:'smt_sbbyjl',leaf:true},
+			{id:'01_17',text:'SMT贴片类型查询',name:'smt_tplx',leaf:true},
+			{id:'01_18',text:'SMT在线维修查询',name:'smt_zxwx',leaf:true},
+			{id:'01_19',text:'SMT上料记录',name:'smt_sljl',leaf:true},
+			{id:'01_20',text:'SMT贴片接口信息',name:'smt_tpjkxx',leaf:true},
+			{id:'01_21',text:'SMT上料查询',name:'smt_sl',leaf:true},
+			{id:'01_22',text:'SMT产能查询',name:'smt_cn',leaf:true},
+			{id:'01_23',text:'Feeder保养记录查询',name:'feeder_byjl',leaf:true},
+			{id:'01_24',text:'物料收料单回传查询',name:'wlsldhc',leaf:true},
+			{id:'01_25',text:'仓库物料查询',name:'ckwl',leaf:true},
+			{id:'01_26',text:'工单物料出库明细查询',name:'gdwlckmx',leaf:true},
+			{id:'01_27',text:'工单物料备料明细查询',name:'gdwlblmx',leaf:true},
+			{id:'01_28',text:'物料入库查询',name:'wlrk',leaf:true}	
+	]
+
+}

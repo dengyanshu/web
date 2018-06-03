@@ -1,0 +1,12 @@
+Ext.define("core.mes.model.reportforms.wl.Model",{
+	extend:'Ext.data.Model',
+	fields:[
+		{name:'MOName'},  
+		{name:'WorkcenterName'},
+		{name:'StationNo'},
+		{name:'SLotNO'},
+		{name:'Side'},
+		{name:'BaseQty'},
+		{name:'Qty'}
+	]
+});

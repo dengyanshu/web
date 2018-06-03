@@ -1,0 +1,12 @@
+Ext.define("core.course_manage.model.CourseModel",{
+	extend:'Ext.data.Model',
+	fields:[
+		{name:'WorkprocedureCourseId'},
+		{name:'CourseCode'},
+		{name:'CourseTitle'},
+		{name:'CreateUserId'},
+		{name:'CreateTime'},
+		{name:'ModifyUserId'},
+		{name:'ModifyTime'}
+	]
+});

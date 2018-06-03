@@ -1,0 +1,11 @@
+Ext.define("core.mes.model.reportforms.sl.Model",{
+	extend:'Ext.data.Model',
+	fields:[
+		{name:'POName'},  
+		{name:'ProductName'},
+		{name:'ProductDescription'},
+		{name:'VendorName'},
+		{name:'VendorDescription'},
+		{name:'收货数量'}
+	]
+});

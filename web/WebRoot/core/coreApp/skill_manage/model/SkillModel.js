@@ -1,0 +1,15 @@
+Ext.define("core.skill_manage.model.SkillModel",{
+	extend:'Ext.data.Model',
+	fields:[
+		{name:'WorkprocedureSkillId'},
+		{name:'SkillCode'},
+		{name:'SkillName'},
+		{name:'SkillDescription'},
+		{name:'SkillCategory'},
+		{name:'CreateUserId'},
+		{name:'CreateTime'},
+		{name:'ModifyUserId'},
+		{name:'ModifyTime'},
+		{name:'SkillRemark'}
+	]
+});

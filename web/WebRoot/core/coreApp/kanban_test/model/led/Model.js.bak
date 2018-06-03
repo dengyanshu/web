@@ -1,0 +1,18 @@
+Ext.define("core.kanban_test.model.led.Model",{
+	extend:"Ext.data.Model",
+    fields: [
+    	 {name: 'RowNum'},
+         {name: 'MOName'},
+         {name: 'MOId'},
+         {name: 'ProductName'},
+         {name: 'ProductDescription'},
+         {name: 'MOQtyRequired'},
+         {name: 'StandardLaborTime'},
+         {name: 'StandardHuman'},
+         {name: 'AchievingRate'},
+         {name: 'StandardCapacity'},
+         {name: 'ShiftName'},
+         {name: 'WorkcenterName'},
+         {name:	'WorkcenterId'}
+    ]
+});

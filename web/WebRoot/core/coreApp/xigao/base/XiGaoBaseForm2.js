@@ -1,0 +1,19 @@
+Ext.define("core.xigao.base.XiGaoBaseForm2",{
+	extend:"Ext.form.FormPanel",
+  	bodyStyle:'padding:5px 5px 0',	
+  	labelAlign:"left",
+  	region:'south',
+  	height:120,
+  	split:true,
+  	layout:'fit',
+  	frame:true,
+  		items:[
+		{
+			xtype:'textarea',
+			grow:true,
+			labelAlign:'top',
+			name:'return_msg',
+			fieldLabel:'处理信息'
+		}
+	]
+});

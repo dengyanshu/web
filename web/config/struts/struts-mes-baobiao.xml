@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+	"http://struts.apache.org/dtds/struts-2.1.dtd">
+
+<struts>
+	<package name="baobiao" namespace="/mes/baobiao" extends="json-default">
+		<action name="bdgx" class="com.data.mes.baobiao.Bdgx">
+			<result type="json"></result>
+		</action>
+		<action name="ckwl" class="com.data.mes.baobiao.Ckwl">
+			<result type="json"></result>
+		</action>
+		<action name="cn" class="com.data.mes.baobiao.Cn">
+			<result type="json"></result>
+		</action>
+		<action name="feeder_byjl" class="com.data.mes.baobiao.Feeder_Byjl">
+			<result type="json"></result>
+		</action>
+		<action name="gccxsjscap" class="com.data.mes.baobiao.Gccxsjscap">
+			<result type="json"></result>
+		</action>
+		<action name="gdbl" class="com.data.mes.baobiao.Gdbl">
+			<result type="json"></result>
+		</action>
+		<action name="gdwlckmx" class="com.data.mes.baobiao.Gdwlckmx">
+			<result type="json"></result>
+		</action>
+		<action name="gdwlblmx" class="com.data.mes.baobiao.Gdwlblmx">
+			<result type="json"></result>
+		</action>
+		<action name="gyswlxx" class="com.data.mes.baobiao.Gyswlxx">
+			<result type="json"></result>
+		</action>
+		<action name="iqc" class="com.data.mes.baobiao.Iqc">
+			<result type="json"></result>
+		</action>
+		<action name="phwlxm" class="com.data.mes.baobiao.Phwlxm">
+			<result type="json"></result>
+		</action>
+		<action name="rk" class="com.data.mes.baobiao.Rk">
+			<result type="json"></result>
+		</action>
+		<action name="sjl" class="com.data.mes.baobiao.Sjl">
+			<result type="json"></result>
+		</action>
+		<action name="sl" class="com.data.mes.baobiao.Sl">
+			<result type="json"></result>
+		</action>
+		<action name="sljl" class="com.data.mes.baobiao.Sljl">
+			<result type="json"></result>
+		</action>
+		<action name="smt_cn" class="com.data.mes.baobiao.Smt_Cn">
+			<result type="json"></result>
+		</action>
+		<action name="smt_sbbyjl" class="com.data.mes.baobiao.Smt_Sbbyjl">
+			<result type="json"></result>
+		</action>
+		<action name="smt_sl" class="com.data.mes.baobiao.Smt_Sl">
+			<result type="json"></result>
+		</action>
+		<action name="smt_sljl" class="com.data.mes.baobiao.Smt_Sljl">
+			<result type="json"></result>
+		</action>
+		<action name="smt_tpjkxx" class="com.data.mes.baobiao.Smt_Tpjkxx">
+			<result type="json"></result>
+		</action>
+		<action name="smt_tplx" class="com.data.mes.baobiao.Smt_Tplx">
+			<result type="json"></result>
+		</action>
+		<action name="smt_zxwx" class="com.data.mes.baobiao.Smt_Zxwx">
+			<result type="json"></result>
+		</action>
+		<action name="wl" class="com.data.mes.baobiao.Wl">
+			<result type="json"></result>
+		</action>
+		<action name="wlrk" class="com.data.mes.baobiao.Wlrk">
+			<result type="json"></result>
+		</action>
+		<action name="wlsldhc" class="com.data.mes.baobiao.Wlsldhc">
+			<result type="json"></result>
+		</action>
+		<action name="wx" class="com.data.mes.baobiao.Wx">
+			<result type="json"></result>
+		</action>
+		<action name="ztl" class="com.data.mes.baobiao.Ztl">
+			<result type="json"></result>
+		</action>
+		<action name="dip_wx" class="com.data.mes.baobiao.Dip_Wx">
+			<result type="json"></result>
+		</action>
+		
+	</package>
+</struts>
+	

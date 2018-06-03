@@ -1,0 +1,16 @@
+Ext.define("core.grid_test.view.TestForm",{
+	extend:"core.app.base.BaseForm",
+	alias:"widget.testform",
+	items:[{
+		name:"name",
+		fieldLabel:"名称"
+	},{
+		name:"code",
+		fieldLabel:"编码"
+	},{
+		name:"birthday",
+		fieldLabel:"出生日期",
+		xtype:"datetimefield",
+		dateType:"date"
+	}]
+});

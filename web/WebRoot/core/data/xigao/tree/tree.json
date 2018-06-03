@@ -1,0 +1,11 @@
+{
+	report_forms:[
+			{id:'xigao-01-01',text:'锡膏入库扫描',name:'xgrksm',leaf:true},
+			{id:'xigao-01-02',text:'锡膏出冰箱扫描',name:'xgcbxsm',leaf:true},
+			{id:'xigao-01-03',text:'锡膏上线扫描',name:'xgsxsm',leaf:true},
+			{id:'xigao-01-04',text:'锡膏回收与发放扫描',name:'xghsyffsm',leaf:true},
+			{id:'xigao-02-01',text:'锡膏使用记录查询',name:'xgsyjlcx',leaf:true},
+			{id:'xigao-02-02',text:'锡膏库存查询',name:'xgkccx',leaf:true}
+	]
+
+}

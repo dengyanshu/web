@@ -1,0 +1,11 @@
+Ext.define("core.sx_line_kanban.model.Model",{
+	extend:'Ext.data.Model',
+	fields:[
+		{name:'time'},
+		{name:'BL',type:'int'},
+		{name:'BC',type:'int'},
+		{name:'MWT',type:'int'},
+		{name:'CSP',type:'int'},
+		{name:'CST',type:'int'}
+	]	
+});

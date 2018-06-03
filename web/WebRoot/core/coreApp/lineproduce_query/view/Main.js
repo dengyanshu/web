@@ -1,0 +1,10 @@
+Ext.define("core.lineproduce_query.view.Main",{
+	extend:'Ext.Panel',
+	alias:'widget.lineproducequery',
+	layout:'border',
+	bodyStyle:'background-color:#157fcc',
+	items:[
+		{xtype:'lineproduce_search'},
+		{xtype:'lineproduce_result'}
+	]			
+});

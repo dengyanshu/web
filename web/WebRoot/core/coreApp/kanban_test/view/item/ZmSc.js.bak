@@ -1,0 +1,71 @@
+Ext.define("core.kanban_test.view.item.ZmSc", {
+			extend : "Ext.grid.Panel",
+			alias : 'widget.tj_sc_zm_kb',
+			loadMask : true, 
+			stripeRows : true,
+			store : 'core.kanban_test.store.zm.Store',
+			columns : [
+					{
+						header : '序号',
+						dataIndex : 'RowNum',
+						width : 50
+					},
+					{
+						header : '工单',
+						dataIndex : 'MOName',
+						width : 150
+					},
+					{
+						header : 'MOId',
+						dataIndex : 'MOId',
+						hidden:true
+					},
+					{
+						header : '料号',
+						dataIndex : 'ProductName',
+						width : 150
+					},
+					{
+						header : '产品描述',
+						dataIndex : 'ProductDescription',
+						width : 150
+					},{
+						header : '工单数量',
+						dataIndex : 'MOQtyRequired',
+						width : 150
+					},{
+						header : '标准工时',
+						dataIndex : 'StandardLaborTime',
+						width : 150
+					},{
+						header : '标准人力',
+						dataIndex : 'StandardHuman',
+						width : 150
+					},{
+						header : '达成率',//如果达成率小于此值，则报表红色显示，否则，绿色显示
+						dataIndex : 'AchievingRate',
+						width : 150
+					},{
+						header : '标准产能(即目标)',
+						dataIndex : 'StandardCapacity',
+						width : 150
+					},{
+						header : '班别',
+						dataIndex : 'ShiftName',
+						width : 150
+					},{
+						header : '线别',
+						dataIndex : 'WorkcenterName',
+						flex : 1
+					}
+
+			],
+			dockedItems:[{
+				xtype:'pagingtoolbar',
+				store : 'core.kanban_test.store.zm.Store',
+				dock:'bottom',
+				displayInfo:true,
+				displayMsg:'第{0} 到 {1} 条数据 共{2}条',
+				emptyMsg:'没有数据'
+			}]
+		});

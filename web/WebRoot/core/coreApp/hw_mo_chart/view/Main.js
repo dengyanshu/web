@@ -1,0 +1,9 @@
+Ext.define("core.hw_mo_chart.view.Main",{
+	extend:'Ext.Panel',
+	alias:'widget.hw_mo_chart_main',
+	layout:'border',
+	items:[
+		{xtype:'hw_mo_chart_listview'},
+		{xtype:'hw_mo_chart_search'}
+	]			
+});

@@ -1,0 +1,14 @@
+Ext.define("core.mvc.store.Store",{
+	extend:'Ext.data.Store',
+	model:'core.mvc.model.Model',
+	autoLoad:false,
+	proxy:{
+		type:'ajax',
+		url:'/web/test/testdata!getResult.action',
+		//type:'memory',
+		reader:{
+			type:'json',
+			root:'data'
+		}
+	}
+});

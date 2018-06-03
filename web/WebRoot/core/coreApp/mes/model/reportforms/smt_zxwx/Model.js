@@ -1,0 +1,13 @@
+Ext.define("core.mes.model.reportforms.smt_zxwx.Model",{
+	extend:'Ext.data.Model',
+	fields:[
+		{name:'工单'},  
+		{name:'LotSN批号'},
+		{name:'机型'},
+		{name:'维修方法代码(不良描述)'},
+		{name:'维修位置'},
+		{name:'维修次数'},
+		{name:'维修员'},
+		{name:'维修时间'}
+	]
+});

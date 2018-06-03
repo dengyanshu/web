@@ -1,0 +1,340 @@
+.container {
+  text-align: center;
+}
+
+.container .progress_1 {
+  width: 240px;
+}
+
+.container .progress {
+  width: 240px;
+}
+
+.progress-val_1 {
+  float: right;								/** 右边浮动*/
+  margin-right:-55px;						/** 右边边缘距离*/
+  margin-top:-4px;							/** 顶部边缘距离*/
+  font: bold 10px/34px Helvetica, Arial, sans-serif;
+  color: #333;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.6);  /** 文字阴影*/
+}
+
+.progress-val {
+  float: right;								/** 右边浮动*/
+  margin-right:0px;						/** 右边边缘距离*/
+  margin-top:-8px;							/** 顶部边缘距离*/
+  font: bold 10px/34px Helvetica, Arial, sans-serif;
+  color: #333;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.6);  /** 文字阴影*/
+}
+
+.progress-val2 {
+  float: right;								/** 右边浮动*/
+  margin-right:-20px;						/** 右边边缘距离*/
+  margin-top:-9px;							/** 顶部边缘距离*/
+  font: bold 10px/34px Helvetica, Arial, sans-serif;
+  color: #00ff30;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.6);  /** 文字阴影*/
+}
+.progress-val3 {
+  float: left;								 /**右边浮动*/
+  margin-left:100px;
+ /** margin-right:-20px;						 右边边缘距离*/
+  margin-top:-9px;							/** 顶部边缘距离*/
+  font: bold 10px/34px Helvetica, Arial, sans-serif;
+  color: #000000;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.6);  /** 文字阴影*/
+}
+
+.progress {
+  overflow: hidden; 
+  padding: 0 60px; 
+  height: 24px;
+  background: #d3d5d9;
+  border-radius: 5px;
+  /**font: bold 15px/34px Helvetica, Arial, sans-serif;*/
+  background-image: -webkit-linear-gradient(top, #ebecef, #bfc3c7);
+  background-image: -moz-linear-gradient(top, #ebecef, #bfc3c7);
+  background-image: -o-linear-gradient(top, #ebecef, #bfc3c7);
+  background-image: linear-gradient(to bottom, #ebecef, #bfc3c7);
+  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.8), 0 2px 4px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(0, 0, 0, 0.1), 0 0 0 6px #b6babe, 0 7px rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.8), 0 2px 4px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(0, 0, 0, 0.1), 0 0 0 1.5px #b6babe, 0 7px rgba(255, 255, 255, 0.1);
+}
+
+.progress_1{
+  overflow: hidden; 
+  padding: 0 60px; 
+  height: 24px;
+  background: #d3d5d9;
+  border-radius: 5px;
+  /**font: bold 15px/34px Helvetica, Arial, sans-serif;*/
+  background-image: -webkit-linear-gradient(top, #ebecef, #bfc3c7);
+  background-image: -moz-linear-gradient(top, #ebecef, #bfc3c7);
+  background-image: -o-linear-gradient(top, #ebecef, #bfc3c7);
+  background-image: linear-gradient(to bottom, #ebecef, #bfc3c7);
+  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.8), 0 2px 4px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(0, 0, 0, 0.1), 0 0 0 6px #b6babe, 0 7px rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.8), 0 2px 4px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(0, 0, 0, 0.1), 0 0 0 1.5px #b6babe, 0 7px rgba(255, 255, 255, 0.1);
+}
+
+
+.progress-bar_1 {
+ /** width: 10%;
+   background-color: #f63a0f; */
+  
+  margin-top:4px;
+  margin-left:-57px;
+  position: relative;
+  height: 16px;
+  border-radius: 4px;
+  -webkit-transition: 0.4s linear;
+  -moz-transition: 0.4s linear;
+  -o-transition: 0.4s linear;
+  transition: 0.4s linear;
+  -webkit-transition-property: width, background-color;
+  -moz-transition-property: width, background-color;
+  -o-transition-property: width, background-color;
+  transition-property: width, background-color;
+  -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+}
+
+.progress-bar {  
+  margin-top:-3px;
+  margin-left:0px;
+  position: relative;
+  height: 16px;
+  border-radius: 4px;
+  -webkit-transition: 0.4s linear;
+  -moz-transition: 0.4s linear;
+  -o-transition: 0.4s linear;
+  transition: 0.4s linear;
+  -webkit-transition-property: width, background-color;
+  -moz-transition-property: width, background-color;
+  -o-transition-property: width, background-color;
+  transition-property: width, background-color;
+  -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+}
+
+
+.progress-bar2 {  
+  margin-top:-16px;  				 /** 与顶点的距离 */
+  margin-left:0px;			 	 /** 与左边的距离 */
+  position: relative;			 /** 相对位置 */
+  height: 16px;					 /** 进度打高度 */
+  border-radius: 4px;
+  -webkit-transition: 0.4s linear;
+  -moz-transition: 0.4s linear;
+  -o-transition: 0.4s linear;
+  transition: 0.4s linear;
+  -webkit-transition-property: width, background-color;
+  -moz-transition-property: width, background-color;
+  -o-transition-property: width, background-color;
+  transition-property: width, background-color;
+  -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+}
+
+.progress-bar3 {
+	width:234px;
+  /*width: 100%;*/
+  background: #b8b8b8;
+  margin-top:7px;  				 /** 与顶点的距离 */
+  margin-left:-57px;			 /** 与左边的距离 */
+  position: relative;			 /** 相对位置 */
+  height: 16px;					 /** 进度打高度 */
+  border-radius: 4px;
+  -webkit-transition: 0.4s linear;
+  -moz-transition: 0.4s linear;
+  -o-transition: 0.4s linear;
+  transition: 0.4s linear;
+  -webkit-transition-property: width, background-color;
+  -moz-transition-property: width, background-color;
+  -o-transition-property: width, background-color;
+  transition-property: width, background-color;
+  -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.6);
+   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.6);
+}
+
+.progress-bar:before, .progress-bar:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.progress-bar:before {
+  bottom: 0;
+  border-radius: 4px 4px 0 0;
+}
+.progress-bar:after {
+  z-index: 2;
+  bottom: 45%;
+  border-radius: 4px;
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+}
+
+
+
+
+.smt-line-progress {
+  padding: 4px;										/*向外扩展填充*/
+  background: rgba(0, 0, 0, 0.25);			/*背景颜色*/
+  border-radius: 6px;								/*设置圆角半径*/
+  bottom: 45%;												/*用百分比来衡量与底部的偏移量*/
+  width:120px;											/*宽度 由于被旋转这里指高度*/
+  height:100px;										/*高度 由于被旋转这里指宽度*/
+  -webkit-transform:rotate(180deg);	 	/*设置270旋转*/
+  -moz-transform:rotate(180deg);	
+  -o-transform:rotate(180deg);	
+  -ms-transform:rotate(180deg);	
+  transform:rotate(180deg);	
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);/*阴影设置 */
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.smt-line-progress-bar {
+ /* height : 50%;*/
+  background-color: #f27011;
+  position: relative;									/*位置设为相对位置*/
+  width: 111px;										/*高度 由于被旋转这里指宽度*/
+  border-radius: 4px;								/*圆角半径*/
+  -webkit-transition: 0.4s linear;				/*过度的时间，和过度的类型 线型过渡*/
+  -moz-transition: 0.4s linear;
+  -o-transition: 0.4s linear;
+  transition: 0.4s linear;
+  -webkit-transition-property: height, background-color;	/*指定要进行过渡的属性*/
+  -moz-transition-property: height, background-color;
+  -o-transition-property: height, background-color;
+  transition-property: height, background-color;
+  -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);/*阴影设置 */
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+}
+
+.smt-line-progress_val{
+   -webkit-transform:rotate(180deg);	 	/*设置180旋转*/
+   -moz-transform:rotate(180deg);	
+   -o-transform:rotate(180deg);	
+   -ms-transform:rotate(180deg);	
+    transform:rotate(180deg);	
+	position:absolute;								/*绝对位置 relative*/	
+	top:70px;
+	left:15px;
+	font-weight:bold;font-size:10px;
+
+}
+
+
+
+.smt-xbc-progress_val{
+   -webkit-transform:rotate(180deg);	 	
+   -moz-transform:rotate(180deg);	
+   -o-transform:rotate(180deg);	
+   -ms-transform:rotate(180deg);	
+    transform:rotate(180deg);	
+	position:absolute;								
+	top:70px;
+	left:15px;
+
+}
+.smt-line-progress_val2{
+  -webkit-transform:rotate(180deg);	 	/*设置180旋转*/
+  -moz-transform:rotate(180deg);	
+  -o-transform:rotate(180deg);	
+  -ms-transform:rotate(180deg);	
+  transform:rotate(180deg);	
+	position:absolute;								/*绝对位置 relative*/	
+	top:5px;
+	left:1px;
+	font-weight:bold;font-size:12px;
+}
+.smt-xbc-progress_val2{
+  -webkit-transform:rotate(180deg);	 	
+  -moz-transform:rotate(180deg);	
+  -o-transform:rotate(180deg);	
+  -ms-transform:rotate(180deg);	
+  transform:rotate(180deg);	
+	position:absolute;								
+	top:5px;
+	left:5px;
+}
+
+
+.smt-line-progress_val3{
+  -webkit-transform:rotate(180deg);	 	/*设置180旋转*/
+  -moz-transform:rotate(180deg);	
+  -o-transform:rotate(180deg);	
+  -ms-transform:rotate(180deg);	
+  transform:rotate(180deg);	
+	position:absolute;								/*绝对位置 relative*/	
+	top:5px;
+}
+
+.smt-line-progress_val4{
+  -webkit-transform:rotate(180deg);	 	/*设置180旋转*/
+  -moz-transform:rotate(180deg);	
+  -o-transform:rotate(180deg);	
+  -ms-transform:rotate(180deg);	
+  transform:rotate(180deg);	
+	position:absolute;								/*绝对位置 relative*/	
+	top:20px;
+   right:35px;
+	color:red;
+	font-weight:bold;font-size:15px;
+	
+}
+
+
+.smt-line-progress_val5{
+  -webkit-transform:rotate(180deg);	 	/*设置180旋转*/
+  -moz-transform:rotate(180deg);	
+  -o-transform:rotate(180deg);	
+  -ms-transform:rotate(180deg);	
+  transform:rotate(180deg);	
+	position:absolute;								/*绝对位置 relative*/	
+	top:20px;
+   right:35px;
+	color:black;
+	font-weight:bold;font-size:15px;
+	
+}
+
+
+.smt-line-progress-bar:before, .progress-bar:after {
+  content: '';
+  position: absolute; 					 /*位置为绝对位置*/
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.smt-line-progress-bar:before {
+  top: 0;
+  border-radius: 4px 4px 0 0;
+}
+.smt-line-progress-bar:after {
+  z-index: 2;									/*用整数值来定义叠加级别*/
+  bottom: 45%;
+  border-radius: 4px;
+  background-image: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+}
+
+.progress-images{
+	float:left;
+	margin-left:200px;
+	margin-top:-24px;  
+ /** position: relative;				相对位置 */
+}
+
+body{font-size:12px;background-color:#FFF;overflow:hidden;}
+
+.titletd td{background:url('images/nav_bg.gif');padding:15px;text-align:center;height:48;font-size:18px;}
+.datatd td{background-color:#FFFFFF;height:30px;padding-left:2px;font-size:12px;}
+
+/** .datatd td{height:30px;text-align:center;} */

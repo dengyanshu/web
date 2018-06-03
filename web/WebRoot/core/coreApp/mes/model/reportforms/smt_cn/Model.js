@@ -1,0 +1,14 @@
+Ext.define("core.mes.model.reportforms.smt_cn.Model",{
+	extend:'Ext.data.Model',
+	fields:[
+		{name:'MOName'},  
+		{name:'workcenterID'},
+		{name:'WorkcenterName'},
+		{name:'ExecutedateFrom'},
+		{name:'ProductName'},
+		{name:'ProductDescription'},
+		{name:'MOQtyRequired'},
+		{name:'DIPStartQty'},
+		{name:'SMTEndQty'}
+	]
+});

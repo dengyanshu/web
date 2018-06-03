@@ -1,0 +1,9 @@
+Ext.define("core.smt_xbckc.view.Main",{
+	extend:'Ext.Panel',
+	alias:'widget.smt_xbckc_main',
+	layout:'border',
+	items:[
+		{xtype:'smt_xbckc_listview'},
+		{xtype:'smt_xbckc_search'}
+	]			
+});

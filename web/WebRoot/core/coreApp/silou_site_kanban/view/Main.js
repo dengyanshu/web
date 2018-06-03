@@ -1,0 +1,10 @@
+Ext.define("core.silou_site_kanban.view.Main",{
+	extend:'Ext.Panel',
+	alias:'widget.silou_site_kanban_main',
+	layout:'border',
+	items:[
+		{xtype:'silou_site_kanban_listview'},
+		{xtype:'silou_site_kanban_search'},
+		{xtype:'silou_site_kanban_chartview'}
+	]			
+});

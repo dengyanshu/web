@@ -1,0 +1,12 @@
+Ext.define("core.mes.model.reportforms.gdwlckmx.Model",{
+	extend:'Ext.data.Model',
+	fields:[
+		{name:'MOId'},  
+		{name:'ProductId'},
+		{name:'ProductName'},
+		{name:'ItemQtyRequired'},
+		{name:'出库数量'},
+		{name:'ProductDescription'},
+		{name:'ProductSpecification'}
+	]
+});

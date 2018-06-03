@@ -1,0 +1,13 @@
+Ext.define("core.mes.store.reportforms.sl.Store",{
+	extend:'Ext.data.Store',
+	remoteSort:true,
+   	model:'core.mes.model.reportforms.sl.Model',
+    pageSize:15,
+    proxy:{
+    	type:'pagingmemory',
+    	reader:{
+    		type:'json',
+    		root:'data'
+    	}
+    }
+});

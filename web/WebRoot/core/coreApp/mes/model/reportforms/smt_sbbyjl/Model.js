@@ -1,0 +1,24 @@
+Ext.define("core.mes.model.reportforms.smt_sbbyjl.Model",{
+	extend:'Ext.data.Model',
+	fields:[
+		{name:'SMTLine'},  
+		{name:'PrintMachine'},
+		{name:'SMTSPI'},
+		{name:'UniversalMachine'},
+		{name:'ReflowOven'},
+		{name:'AOINumber'},
+		{name:'ChipMachineA'},
+		{name:'ChipMachineB'},
+		{name:'ChipMachineC'},
+		{name:'ChipMachineD'},
+		{name:'ChipMachineE'},
+		{name:'ChipMachineF'},
+		{name:'MaintainType'},
+		{name:'MaintainUser'},
+		{name:'设备保养日期'},
+		{name:'下一次周保养日期'},
+		{name:'下一次月保养日期'},
+		{name:'下一次季度保养日期'},
+		{name:'下一次年保养日期'}
+	]
+});

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+	"http://struts.apache.org/dtds/struts-2.1.dtd">
+
+<struts>
+	 <package name="skill" namespace="/skill" extends="pc-default">
+	 	<action name="skillmanage_user" class="skillmanage_user">
+			<result type="plainText" /> 
+		</action>
+		<action name="skillmanage_skill" class="skillmanage_skill">
+			<result type="plainText" />
+		</action>
+		<action name="skillmanage_userskill" class="skillmanage_userskill">
+			<result type="plainText" />
+		</action>
+		<action name="skillmanage_course" class="skillmanage_course">
+			<result type="plainText" />
+		</action>
+		<action name="skillmanage_userReservationCourse" class="skillmanage_userReservationCourse">
+			<result type="plainText" />
+		</action>	
+		<action name="skillmanage_courseskill" class="skillmanage_courseskill">
+			<result type="plainText" />
+		</action>			
+		<action name="skillmanage_reservationCourse" class="skillmanage_reservationCourse">
+			<result type="plainText" />
+		</action>	
+		
+		<action name="skillmanage_conferencePos" class="skillmanage_conferencePos">
+			<result type="plainText" />
+		</action>			
+		
+    </package>
+</struts>
+	
+
+
+
+	

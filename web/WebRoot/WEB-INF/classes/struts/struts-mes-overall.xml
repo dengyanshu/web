@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+	"http://struts.apache.org/dtds/struts-2.1.dtd">
+
+<struts>
+	<package name="overall" namespace="/mes/overall" extends="json-default">
+		<action name="all" class="com.data.mes.overall.All">
+			<result type="json"></result>
+		</action>	
+		<action name="cn_mo" class="com.data.mes.overall.Cn_MO">
+			<result type="json"></result>
+		</action>
+		<action name="cn_pn" class="com.data.mes.overall.Cn_PN">
+			<result type="json"></result>
+		</action>
+		<action name="gccxsjscap_mo" class="com.data.mes.overall.Gccxsjscap_Mo">
+			<result type="json"></result>
+		</action>
+		<action name="gccxsjscap_pn" class="com.data.mes.overall.Gccxsjscap_Pn">
+			<result type="json"></result>
+		</action>
+		<action name="gccxsjscap_sum" class="com.data.mes.overall.Gccxsjscap_Sum">
+			<result type="json"></result>
+		</action>
+		<action name="gyswlxx_gys" class="com.data.mes.overall.Gyswlxx_Gys">
+			<result type="json"></result>
+		</action>
+		<action name="moname_smt_viewlist" class="com.data.mes.overall.MOName_SMT_ViewList">
+			<result type="json"></result>
+		</action>
+		<action name="product_viewlist" class="com.data.mes.overall.Product_ViewList">
+			<result type="json"></result>
+		</action>
+		<action name="workcenter_viewlist" class="com.data.mes.overall.Workcenter_ViewList">
+			<result type="json"></result>
+		</action>
+		<action name="moname_viewlist_android" class="com.data.mes.overall.MOName_ViewList_Android">
+			<result type="json"></result>
+		</action>	
+		<action name="txn_tinol_on_line_show" class="com.data.mes.overall.Txn_TinolOnLineShow">
+			<result type="json"></result>
+		</action>	
+		<action name="workcenterOfSMT_viewlist" class="com.data.mes.overall.WorkcenterOfSMT_ViewList">
+			<result type="json"></result>
+		</action>	
+		<action name="txn_tinol_on_line_show_1" class="com.data.mes.overall.Txn_TinolOnLineShow_1">
+			<result type="json"></result>
+		</action>			
+	</package>
+</struts>
+	

@@ -1,0 +1,20 @@
+/***************************************************************************
+  								<导航类> 
+ ***************************************************************************/
+ Ext.define("core.smt_sb2_kanban.view.Navigation",{
+ 	//extend:'Ext.Panel',
+ 	extend:'core.smt_sb2_kanban.base.BaseTree',
+ 	alias:'widget.smtsb2_kb_navigation',
+ 	title:'功能列表',
+ 	collapsible:true,
+ 	split:true,
+ 	margins:'5 2 5 5',
+ 	width:120,
+ 	/*
+	layout:{
+		type:"accordion",	
+		animate:true		
+	},
+	*/
+	store:'core.smt_sb2_kanban.store.Tree'
+ });

@@ -1,0 +1,27 @@
+<chart caption='title' subCaption='xx' numdivlines='9' lineThickness='2' showValues='0' anchorRadius='3' anchorBgAlpha='50' showAlternateVGridColor='1' numVisiblePlot='12' animation='0'>
+<categories >
+<category label='00:00' />
+<category label='01:00' />
+<category label='02:00' />
+</categories>
+<dataset seriesName='Tue' color='800080' anchorBorderColor='800080'>
+<set value='54' />
+<set value='165' />
+<set value='175' />
+</dataset>
+<dataset seriesName='Wed' color='FF8040' anchorBorderColor='FF8040'>
+<set value='111' />
+<set value='120' />
+<set value='128' />
+</dataset>
+<dataset seriesName='Thu' color='FFFF00' anchorBorderColor='FFFF00' >
+<set value='115' />
+<set value='141' />
+<set value='175' />
+</dataset>
+<dataset seriesName='Fri' color='FF0080' anchorBorderColor='FF0080' >
+<set value='98' />
+<set value='1112' />
+<set value='1192' />
+</dataset>
+</chart>

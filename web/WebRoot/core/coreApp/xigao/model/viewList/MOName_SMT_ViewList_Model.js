@@ -1,0 +1,10 @@
+Ext.define("core.xigao.model.viewList.MOName_SMT_ViewList_Model",{
+	extend:'Ext.data.Model',
+	fields:[
+		{name:'rowNum'}, 
+		{name:'MOId'},
+		{name:'MOName'},
+		{name:'productName'},
+		{name:'ProductDescription'}
+	]
+});

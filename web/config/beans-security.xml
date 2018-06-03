@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<beans:beans xmlns="http://www.springframework.org/schema/security"  
+     xmlns:beans="http://www.springframework.org/schema/beans"  
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+     xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    					 http://www.springframework.org/schema/beans/spring-beans-2.5.xsd  
+                         http://www.springframework.org/schema/security 
+                         http://www.springframework.org/schema/security/spring-security-2.0.xsd">
+                         
+	<beans:bean id="loggerListener" class="org.springframework.security.event.authentication.LoggerListener" />	
+     
+  
+     
+	<!-- 当访问被拒绝时，会转到403.jsp auto-config="true" entry-point-ref="casProcessingFilterEntryPoint"-->
+	<http access-denied-page="/login.jsp" >
+	    <intercept-url pattern="/login.jsp" filters="none" />
+	    <intercept-url pattern="/core/office/**" filters="none" />
+	    <intercept-url pattern="/reportfile/**" filters="none" />
+	    <intercept-url pattern="/upload/**" filters="none" />
+	    <intercept-url pattern="/platform/**" filters="none" />
+	    <intercept-url pattern="/index.jsp" />
+	    <form-login login-page="/login.jsp" authentication-failure-url="/login.jsp?error=true" default-target-url="/app/index.action" />
+	    <logout logout-success-url="/login.jsp"/>
+	    <concurrent-session-control max-sessions="1024" exception-if-maximum-exceeded="false"/>
+	</http>
+<!-- 
+    <beans:bean id="guestFilter" class="com.hd.security.filter.GuestFilter">
+        <custom-filter position="ANONYMOUS_FILTER"/>
+        <beans:property name="forwardURL" value="/login.jsp" />
+    </beans:bean>
+ -->
+	<!-- 给权限管理起一个别别名 -->
+	<authentication-manager alias="authenticationManager"/>
+	
+	<!-- 设置认证的提供者 -->
+	
+    <authentication-provider user-service-ref="securityManager">
+       	<password-encoder hash="md5">   <!-- admin : 202cb962ac59075b964b07152d234b70 -->
+       		<!-- <salt-source system-wide="mysalt"/>  盐值，生产环境备用 -->
+       	</password-encoder>
+    </authentication-provider>
+    
+	<beans:bean id="accessDecisionManager" class="org.springframework.security.vote.AffirmativeBased">
+	    <beans:property name="allowIfAllAbstainDecisions" value="false"/>
+	    <beans:property name="decisionVoters">
+	        <beans:list>
+	            <beans:bean class="org.springframework.security.vote.RoleVoter"/>
+	            <beans:bean class="org.springframework.security.vote.AuthenticatedVoter"/>
+	        </beans:list>
+	    </beans:property>
+	</beans:bean>    
+	<!-- 安全拦截器 -->
+	<beans:bean id="resourceSecurityInterceptor" class="org.springframework.security.intercept.web.FilterSecurityInterceptor">
+		<beans:property name="authenticationManager" ref="authenticationManager"/>
+	    <beans:property name="accessDecisionManager" ref="accessDecisionManager"/>
+	    <beans:property name="objectDefinitionSource" ref="resourceInvocation" />
+	    <beans:property name="observeOncePerRequest" value="false" />
+	    <custom-filter after="LAST" />
+	</beans:bean>
+	<!-- 自定义拦截器 -->
+ 
+    <beans:bean id="resourceInvocation" class="com.desktop.security.ResourceInvocation"/>
+
+    <!-- CAS config 
+    <beans:bean id="casProcessingFilterEntryPoint" class="org.springframework.security.ui.cas.CasProcessingFilterEntryPoint">
+		<beans:property name="loginUrl" value="https://localhost:8443/cas/login" />
+		<beans:property name="serviceProperties" ref="casServiceProperties" />
+ 	</beans:bean>
+	<beans:bean id="casServiceProperties" class="org.springframework.security.ui.cas.ServiceProperties">
+		<beans:property name="service" value="http://localhost:8080/j_spring_cas_security_check" />
+		<beans:property name="sendRenew" value="false"/>
+ 	</beans:bean>
+	<beans:bean id="casProcessingFilter" class="org.springframework.security.ui.cas.CasProcessingFilter">
+		<custom-filter after="CAS_PROCESSING_FILTER"/>
+		<beans:property name="authenticationManager" ref="authenticationManager"/>
+		<beans:property name="authenticationFailureUrl" value="/casfailed.jsp" />
+		<beans:property name="defaultTargetUrl" value="/" />
+	</beans:bean>
+	<beans:bean id="casAuthenticationProvider" class="org.springframework.security.providers.cas.CasAuthenticationProvider">
+    	<custom-authentication-provider />
+		<beans:property name="userDetailsService" ref="userDao" />
+		<beans:property name="serviceProperties" ref="casServiceProperties" />
+		<beans:property name="ticketValidator">
+		<beans:bean class="org.jasig.cas.client.validation.Cas20ServiceTicketValidator">
+			<beans:constructor-arg index="0" value="https://localhost:8443/cas" />
+		</beans:bean>
+		</beans:property>
+		<beans:property name="key" value="integratedreport" />
+ 	</beans:bean>
+ 	-->
+</beans:beans>

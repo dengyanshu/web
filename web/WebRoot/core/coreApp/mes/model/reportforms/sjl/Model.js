@@ -1,0 +1,14 @@
+Ext.define("core.mes.model.reportforms.sjl.Model",{
+	extend:'Ext.data.Model',
+	fields:[
+		{name:'EVENTDATE'},  
+		{name:'LotId'},
+		{name:'DataChainId'},
+		{name:'TxnCode'},
+		{name:'WorkflowStepName'},
+		{name:'UserName'},
+		{name:'WorkcenterName'},
+		{name:'ResourceName'},
+		{name:'UserComment'}
+	]
+});

@@ -1,0 +1,56 @@
+Ext.define("core.sys.dd.view.DDGrid",{
+	extend:"core.app.base.BaseGrid",
+	alias:"widget.dd.ddgrid",
+	tbar:[
+		{xtype:'button',text:'添加',ref:'gridInsertF',iconCls:'table_add',hidden:true},
+		{xtype:'button',text:'添加',ref:'gridInsert',iconCls:'table_add'},
+		{xtype:'button',text:'编辑',ref:'gridEdit',iconCls:'table_remove',disabled:true},
+		{xtype:'button',text:'删除',ref:'gridDelete',iconCls:'table_remove'},
+		{xtype:'button',text:'保存',ref:'gridSave',iconCls:'table_save'}
+	],
+	columns:[{
+		xtype:"rownumberer",
+		width : 35,
+		text :'No.',
+		align : 'center'
+	},{
+		text:"主键",
+		dataIndex:"ddId",
+		hidden:true
+	},{
+		text:"字典名称",
+		dataIndex:"ddName",
+		field:{
+			xtype:"textfield"
+		}
+	},{
+		text:"字典编码",
+		dataIndex:"ddCode",
+		field:{
+			xtype:"textfield"
+		}
+	},{
+		text:"字典类型",
+		dataIndex:"ddType",
+		columnType:"basecombobox",
+		ddCode:"DDTYPE",
+		field:{
+			xtype:"basecombobox",
+			ddCode:"DDTYPE"
+		}
+	},{
+		text:"启用",
+		dataIndex:"enabled",
+		field:{
+			xtype:"basecombobox",
+			ddCode:"ENABLED"
+		}
+	}],
+	store:"core.sys.dd.store.DDStore",
+	bbar:{
+		xtype:'pagingtoolbar',
+		store:"core.sys.dd.store.DDStore",
+		dock:'bottom',
+		displayInfo:true
+	}
+});

@@ -1,0 +1,24 @@
+Ext.define("core.mes.model.reportforms.smt_tpjkxx.Model",{
+	extend:'Ext.data.Model',
+	fields:[
+		{name:'SMTPasterRecordID'}, 
+		{name:'机台'},  
+		{name:'轨道'},
+		{name:'PCB序列号'},
+		{name:'机台文件名'},
+		{name:'文件名称'},
+		{name:'产生时间'},
+		{name:'总运行时间(S)'},
+		{name:'实际贴片时间(S)'},
+		{name:'停止时间(S)'},
+		{name:'等待时间(S)'},
+		{name:'Rwait'},
+		{name:'Pwait'},
+		{name:'物料贴片总数'},
+		{name:'物料抛料总数'},
+		{name:'Rmiss'},
+		{name:'PCB板总数'},
+		{name:'计算机名'},
+		{name:'CreateDate'}
+	]
+});
